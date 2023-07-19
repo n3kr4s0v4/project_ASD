@@ -1,0 +1,120 @@
+.header {
+    font-family: "Mulish";
+    display: flex;
+    align-items: center;
+    padding: 2vw $padding-side;
+    background-color: $bg;
+    color: $basic;
+    justify-content: space-between;
+	position: sticky;
+	top:0;
+    a {
+        text-decoration: none;
+    }
+
+    .donate {
+        justify-self: center;
+    }
+
+    @media screen and (max-width: $tablet) {
+	}
+}
+
+.menu {
+    @media screen and (max-width: $tablet) {
+		z-index: 1;
+		position: static;
+	}
+}
+
+nav {
+	@media screen and (max-width: $tablet) {
+		display: none;
+	}
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+    list-style-type: none;
+    gap:2vw;
+	padding-left:6vw;
+    // padding-inline-start: 0;
+
+	@media screen and (max-width: $tablet) {
+		display: block;
+	}
+
+	li {
+		display: flex;
+
+		@media screen and (max-width: $tablet) {
+			display: block;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: $basic;
+
+		// @media screen and (max-width: $mobile) {
+		// }
+	}
+
+	.dropdown-menu {
+		display: none;
+		position: absolute;
+		top:100%;
+		background-color: $bg;
+		padding: 1vw 6vw;
+		width: 40vw;
+		transform: translate(-10%, 0);
+
+	}
+
+	li:hover .dropdown-menu {
+		display: block;
+	}
+}
+
+#burger,
+[for="burger"] {
+	display: none;
+}
+
+[for="burger"] {
+	@media screen and (max-width: $tablet) {
+		display: block;
+	}
+}
+
+[for="burger"]::before {
+	@media screen and (max-width: $tablet) {
+		content: url(../../img/header/List.svg);
+	}
+}
+
+#burger:checked + label + nav {
+	@media screen and (max-width: $tablet) {
+		display: block;
+		animation: show 0.5s ease;
+		position:absolute;
+		transform: translate(-40%,);
+		background-color: $bg;
+		width: 65%;
+		height: fit-content;
+		line-height: 200%;
+		text-transform: uppercase;
+    	font-weight: 800;
+	}
+}
+
+
+#burger:checked + [for="burger"]::before {
+	@media screen and (max-width: $tablet) {
+		content: url(../../img/header/close.svg);
+	}
+}
+
+
+
