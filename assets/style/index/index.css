@@ -1,3 +1,5 @@
+@import "../project1/project1.css";
+@import "../projects/projects.css";
 @font-face {
   font-family: "Caveat";
   src: url(../../fonts/Caveat-VariableFont_wght.ttf);

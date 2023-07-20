@@ -1,0 +1,15 @@
+@import "../templates/_templates";
+
+.projects {
+	background-color: $bg;
+}
+
+.projects__title {
+	font-family: Caveat;
+	font-size: 64px;
+	font-style: normal;
+	color: $basic;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+}
