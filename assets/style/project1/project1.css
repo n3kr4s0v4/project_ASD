@@ -37,7 +37,7 @@
   font-family: "Mulish";
   display: flex;
   align-items: center;
-  padding: 2vw 6vw;
+  padding: 1vw 6vw;
   background-color: #EBF5F4;
   color: #266FB4;
   justify-content: space-between;
@@ -46,58 +46,106 @@
 }
 .header a {
   text-decoration: none;
+  color: #266FB4;
 }
 .header .donate {
   justify-self: center;
 }
+
+.menu {
+  padding-right: 6vw;
+}
 @media screen and (max-width: 768px) {
   .menu {
     z-index: 1;
-    position: static;
+    padding-right: 0;
   }
 }
 
 @media screen and (max-width: 768px) {
-  nav {
+  .menu__nav {
     display: none;
+    width: 45vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  .menu__nav {
+    width: 65vw;
   }
 }
 
-nav ul {
+.menu__nav ul {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  gap: 2vw;
   padding-left: 6vw;
+  padding-right: 6vw;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
-  nav ul {
+  .menu__nav ul {
+    display: block;
+    padding-bottom: 2vw;
+    box-sizing: border-box;
+  }
+}
+.menu__nav ul li {
+  display: flex;
+  padding: 1vw;
+  box-sizing: border-box;
+}
+.menu__nav ul li:hover {
+  background-color: rgba(186, 233, 228, 0.4901960784);
+}
+@media screen and (max-width: 768px) {
+  .menu__nav ul li {
     display: block;
   }
 }
-nav ul li {
+.menu__nav ul .dropdown {
   display: flex;
 }
-@media screen and (max-width: 768px) {
-  nav ul li {
-    display: block;
-  }
-}
-nav ul a {
-  text-decoration: none;
-  color: #266FB4;
-}
-nav ul .dropdown-menu {
+.menu__nav ul .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 75%;
   background-color: #EBF5F4;
-  padding: 1vw 6vw;
-  width: 40vw;
-  transform: translate(-10%, 0);
+  font-size: 0.9rem;
+  align-items: start;
+  padding: 2vw 6vw 1vw 1vw;
 }
-nav ul li:hover .dropdown-menu {
-  display: block;
+@media screen and (max-width: 768px) {
+  .menu__nav ul .dropdown-menu {
+    box-sizing: border-box;
+    padding-top: 0;
+    padding-left: 8vw;
+    transform: translate(0, -4%);
+  }
+}
+@media screen and (max-width: 576px) {
+  .menu__nav ul .dropdown-menu {
+    font-size: 0.8rem;
+  }
+}
+.menu__nav ul li:hover > .dropdown-menu,
+.menu__nav ul li:focus-within > .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  width: -moz-min-content;
+  width: min-content;
+  white-space: nowrap;
+  right: 0;
+}
+@media screen and (max-width: 768px) {
+  .menu__nav ul li:hover > .dropdown-menu,
+  .menu__nav ul li:focus-within > .dropdown-menu {
+    top: 100%;
+    white-space: wrap;
+    width: 100%;
+  }
+}
+.menu__nav ul .dropdown-menu:hover {
+  visibility: visible;
 }
 
 #burger,
@@ -122,9 +170,9 @@ nav ul li:hover .dropdown-menu {
     display: block;
     animation: show 0.5s ease;
     position: absolute;
-    transform: translate(-40%);
+    transform: translate(0, 5%);
+    right: 0;
     background-color: #EBF5F4;
-    width: 65%;
     height: -moz-fit-content;
     height: fit-content;
     line-height: 200%;
