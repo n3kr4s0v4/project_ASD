@@ -40,14 +40,15 @@
 .menu__nav ul {
 	display: flex;
 	justify-content: space-around;
-    list-style-type: none;
+    	list-style-type: none;
+	gap: 0;
 	padding-left:6vw;
 	padding-right: 6vw;
 	width: 100%;
 
 	@media screen and (max-width: $tablet) {
 		display: block;
-		padding-bottom: 2vw;
+		padding-bottom: 1vw;
 		box-sizing: border-box;
 	}
 
@@ -71,7 +72,7 @@
 	.dropdown-menu {
 		display: none;
 		position: absolute;
-		top:75%;
+		top:70%;
 		background-color: $bg;
 		font-size: 0.9rem;
 		align-items: start;
