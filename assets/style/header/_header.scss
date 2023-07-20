@@ -1,0 +1,153 @@
+.header {
+    font-family: "Mulish";
+    display: flex;
+    align-items: center;
+    padding: 1vw $padding-side;
+    background-color: $bg;
+    color: $basic;
+    justify-content: space-between;
+	position: sticky;
+	top:0;
+    a {
+        text-decoration: none;
+		color: $basic;
+    }
+
+    .donate {
+        justify-self: center;
+    }
+}
+
+.menu {
+	padding-right: $padding-side;
+    @media screen and (max-width: $tablet) {
+		z-index: 1;
+		padding-right: 0;
+	}
+}
+
+.menu__nav {
+	@media screen and (max-width: $tablet) {
+		display: none;
+		width: 45vw;
+	}
+
+	@media screen and (max-width: $mobile) {
+		width: 65vw;
+	}
+}
+
+.menu__nav ul {
+	display: flex;
+	justify-content: space-around;
+    list-style-type: none;
+	padding-left:6vw;
+	padding-right: 6vw;
+	width: 100%;
+
+	@media screen and (max-width: $tablet) {
+		display: block;
+		padding-bottom: 2vw;
+		box-sizing: border-box;
+	}
+
+	li {
+		display: flex;
+		padding: 1vw;
+		box-sizing: border-box;
+		&:hover {
+			background-color: $bg-dark;
+		}
+
+		@media screen and (max-width: $tablet) {
+			display: block;
+		}
+	}
+
+	.dropdown {
+		display: flex;
+	}
+
+	.dropdown-menu {
+		display: none;
+		position: absolute;
+		top:75%;
+		background-color: $bg;
+		font-size: 0.9rem;
+		align-items: start;
+		padding: 2vw $padding-side 1vw 1vw;
+
+		@media screen and (max-width: $tablet) {
+			box-sizing: border-box;
+			padding-top: 0;
+			padding-left:8vw;
+			transform: translate(0, -4%);
+		}
+
+		@media screen and (max-width: $mobile) {
+			font-size: 0.8rem;
+		}
+
+	}
+
+	li:hover > .dropdown-menu,
+	li:focus-within > .dropdown-menu
+	{
+		display: flex;
+		flex-direction: column;
+		width: min-content;
+		white-space: nowrap;
+		right: 0;
+
+		@media screen and (max-width: $tablet) {
+			top:100%;
+			white-space: wrap;
+			width: 100%;
+		}
+	}
+	.dropdown-menu:hover {
+		visibility: visible;
+	}
+}
+
+#burger,
+[for="burger"] {
+	display: none;
+}
+
+[for="burger"] {
+	@media screen and (max-width: $tablet) {
+		display: block;
+	}
+}
+
+[for="burger"]::before {
+	@media screen and (max-width: $tablet) {
+		content: url(../../img/header/List.svg);
+	}
+}
+
+#burger:checked + label + nav {
+	@media screen and (max-width: $tablet) {
+		display: block;
+		animation: show 0.5s ease;
+		position: absolute;
+		transform: translate(0, 5%);
+		right:0;
+		background-color: $bg;
+		height: fit-content;
+		line-height: 200%;
+		text-transform: uppercase;
+    	font-weight: 800;
+	}
+}
+
+
+#burger:checked + [for="burger"]::before {
+	@media screen and (max-width: $tablet) {
+		content: url(../../img/header/close.svg);
+	}
+}
+
+
+
