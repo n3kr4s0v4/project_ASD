@@ -40,10 +40,8 @@
 .menu__nav ul {
 	display: flex;
 	justify-content: space-around;
-    	list-style-type: none;
+    list-style-type: none;
 	gap: 0;
-	padding-left:6vw;
-	padding-right: 6vw;
 	width: 100%;
 
 	@media screen and (max-width: $tablet) {

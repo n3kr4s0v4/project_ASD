@@ -78,8 +78,7 @@
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  padding-left: 6vw;
-  padding-right: 6vw;
+  gap: 0;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
