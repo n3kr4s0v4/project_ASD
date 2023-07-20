@@ -86,7 +86,7 @@
 @media screen and (max-width: 768px) {
   .menu__nav ul {
     display: block;
-    padding-bottom: 2vw;
+    padding-bottom: 1vw;
     box-sizing: border-box;
   }
 }
