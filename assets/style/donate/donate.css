@@ -78,7 +78,6 @@
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  gap: 0;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -247,7 +246,12 @@
 .body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 101vh;
+}
+@media screen and (max-width: 768px) {
+  .body {
+    height: 100vh;
+  }
 }
 
 .home {
@@ -267,7 +271,7 @@
 .home:hover, .home:active {
   background-color: #287DCD;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .home {
     margin: 0 auto;
   }
@@ -284,7 +288,7 @@
   color: #266FB4;
   flex-grow: 1;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .main {
     flex-direction: column;
     gap: 4vh;
@@ -296,7 +300,7 @@
   text-align: center;
   flex: none;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .main__title {
     font-size: 2vh;
   }
@@ -311,7 +315,7 @@
   margin: 10vh auto;
   flex-grow: 1;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .payment {
     flex-direction: column;
     gap: 4vh;
@@ -324,7 +328,7 @@
   width: 20vw;
   margin: auto 2vw;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .payment__qr img {
     width: 55vw;
     margin: auto 2vw;

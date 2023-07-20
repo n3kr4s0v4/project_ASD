@@ -78,7 +78,6 @@
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  gap: 0;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
