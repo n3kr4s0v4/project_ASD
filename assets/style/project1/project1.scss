@@ -1,0 +1,32 @@
+@import "../templates/_templates";
+@import "../header/_header";
+@import "../footer/_footer";
+
+.class__resourse {
+	width: 50vw;
+	height: 50wh;
+	background-color: $bg;
+}
+
+.home {
+	display: flex;
+	font-family: "Mulish";
+	border-radius: 89px;
+	padding: 1em 2em;
+	background-color: $basic;
+	max-width: fit-content;
+	text-decoration: none;
+	color: $light;
+	text-transform: uppercase;
+	font-weight: 800;
+	text-align: center;
+
+	&:hover,
+	&:active {
+		background-color: $basic-light;
+	}
+
+	@media screen and (max-width: $mobile) {
+		margin: 0 auto;
+	}
+}
