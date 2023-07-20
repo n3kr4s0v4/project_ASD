@@ -1,283 +1,215 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<title>Просто другие</title>
-		<link
-			href="./assets/style/normalize.css"
-			rel="stylesheet" />
-		<link
-			href="./assets/style/index/index.css"
-			rel="stylesheet" />
-	</head>
-	<body>
-		<!--Тут кнопка, меню-->
-		<header class="header">
-			<!-- кнопка хочу помочь начинается здесь -->
-			<a
-				href="./donate.html"
-				target="_blank">
-				<div class="donate">Хочу помочь</div>
-			</a>
-			<!-- кнопка хочу помочь заканчивается здесь -->
-			<div class="menu">
-				<input
-					type="checkbox"
-					id="burger" />
-				<label for="burger"></label>
-				<nav class="menu__nav">
-					<ul>
-						<li>
-							<a
-								href="#about"
-								class="menu__title"
-								>О нас</a
-							>
-						</li>
-						<li>
-							<a
-								href="./team.html"
-								class="menu__title"
-								>Команда</a
-							>
-						</li>
-						<li>
-							<a
-								href="./news.html"
-								class="menu__title"
-								>События</a
-							>
-						</li>
-						<li>
-							<a
-								href="#footer"
-								class="menu__title"
-								>Контакты</a
-							>
-						</li>
-						<li class="dropdown">
-							<a
-								href="#projects"
-								class="menu__title"
-								>Проекты</a
-							>
-							<ul class="dropdown-menu">
-								<li>
-									<a
-										href="./project1.html"
-										class="menu__title"
-										>Учебно-тренировочная квартира</a
-									>
-								</li>
-								<li>
-									<a
-										href="./project2.html"
-										class="menu__title"
-										>Инклюзивная творческая студия «Просто другие»</a
-									>
-								</li>
-								<li>
-									<a
-										href="./project3.html"
-										class="menu__title"
-										>НИИ: НАУКА И ИНКЛЮЗИЯ</a
-									>
-								</li>
-								<li>
-									<a
-										href="./project4.html"
-										class="menu__title"
-										>Культурный код 2.0</a
-									>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Просто другие</title>
+    <link href="./assets/style/normalize.css" rel="stylesheet" />
+    <link href="./assets/style/index/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Тут кнопка, меню-->
+    <header class="header">
+      <!-- кнопка хочу помочь начинается здесь -->
+      <a href="./donate.html" target="_blank">
+        <div class="donate">Хочу помочь</div>
+      </a>
+      <!-- кнопка хочу помочь заканчивается здесь -->
+      <div class="menu">
+        <input type="checkbox" id="burger" />
+        <label for="burger"></label>
+        <nav class="menu__nav">
+          <ul>
+            <li>
+              <a href="#about" class="menu__title">О нас</a>
+            </li>
+            <li>
+              <a href="./team.html" class="menu__title">Команда</a>
+            </li>
+            <li>
+              <a href="./news.html" class="menu__title">События</a>
+            </li>
+            <li>
+              <a href="#footer" class="menu__title">Контакты</a>
+            </li>
+            <li class="dropdown">
+              <a href="#projects" class="menu__title">Проекты</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="./project1.html" class="menu__title"
+                    >Учебно-тренировочная квартира</a
+                  >
+                </li>
+                <li>
+                  <a href="./project2.html" class="menu__title"
+                    >Инклюзивная творческая студия «Просто другие»</a
+                  >
+                </li>
+                <li>
+                  <a href="./project3.html" class="menu__title"
+                    >НИИ: НАУКА И ИНКЛЮЗИЯ</a
+                  >
+                </li>
+                <li>
+                  <a href="./project4.html" class="menu__title"
+                    >Культурный код 2.0</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-		<!--Основная секция-->
-		<main class="main">
-			<!--Блок с лозунгом-->
-			<div
-				class="mission"
-				id="about"></div>
+    <!--Основная секция-->
+    <main class="main">
+      <!--Блок с лозунгом-->
+      <div class="mission" id="about"></div>
 
-			<!--Проекты-->
-			<section
-				class="projects"
-				id="projects">
-				<div class="projects__title">
-					<p>Наши проекты</p>
-				</div>
-				<div class="project1">
-					<div class="project__img">
-						<img
-							src="assets/img/projects/pr1.jpg"
-							alt="ресурсный класс" />
-					</div>
-					<div class="project__text">РЕСУРСНЫЙ КЛАСС</div>
-					<a href="project1.html"
-						><button class="projects__button">Подробнее</button></a
-					>
-				</div>
-				<div class="project2">
-					<div class="project__img">
-						<img
-							src="assets/img/projects/pr2.jpg"
-							alt="ресурсная группа" />
-					</div>
-					<div class="project__text">РЕСУРСНАЯ ГРУППА</div>
-					<button class="projects__button">Подробнее</button>
-				</div>
+      <!--Проекты-->
+      <section class="projects" id="projects">
+        <div class="projects__title">
+          <p>Наши проекты</p>
+        </div>
+        <div class="project1">
+          <div class="project__img">
+            <img src="assets/img/projects/pr1.jpg" alt="ресурсный класс" />
+          </div>
+          <div class="project__text">РЕСУРСНЫЙ КЛАСС</div>
+          <a href="project1.html"
+            ><button class="projects__button">Подробнее</button></a
+          >
+        </div>
+        <div class="project2">
+          <div class="project__img">
+            <img src="assets/img/projects/pr2.jpg" alt="ресурсная группа" />
+          </div>
+          <div class="project__text">РЕСУРСНАЯ ГРУППА</div>
+          <button class="projects__button">Подробнее</button>
+        </div>
 
-				<div class="project3">
-					<div class="project__img">
-						<img
-							src="assets/img/projects/pr3.jpg"
-							alt="квартира" />
-					</div>
-					<div class="project__text">УЧЕБНО-ТРЕНИРОВОЧНАЯ КВАРТИРА</div>
-					<button class="projects__button">Подробнее</button>
-				</div>
+        <div class="project3">
+          <div class="project__img">
+            <img src="assets/img/projects/pr3.jpg" alt="квартира" />
+          </div>
+          <div class="project__text">УЧЕБНО-ТРЕНИРОВОЧНАЯ КВАРТИРА</div>
+          <button class="projects__button">Подробнее</button>
+        </div>
 
-				<div class="project4">
-					<div class="project__img">
-						<img
-							src="assets/img/projects/pr4.JPG"
-							alt="эбру" />
-					</div>
-					<div class="project__text">ИНКЛЮЗИВНАЯ ТВОРЧЕСКАЯ СТУДИЯ</div>
-					<button class="projects__button">Подробнее</button>
-				</div>
-			</section>
+        <div class="project4">
+          <div class="project__img">
+            <img src="assets/img/projects/pr4.JPG" alt="эбру" />
+          </div>
+          <div class="project__text">ИНКЛЮЗИВНАЯ ТВОРЧЕСКАЯ СТУДИЯ</div>
+          <button class="projects__button">Подробнее</button>
+        </div>
+      </section>
 
-			<!--Помощь-->
-			<div class="help"></div>
+      <!--Помощь-->
+      <div class="help"></div>
 
-			<!--Новости-->
-			<section
-				class="news"
-				id="news"></section>
+      <!--Новости-->
+      <section class="news" id="news"></section>
 
-			<!--партнеры-->
-			<section class="partners">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolores
-				similique earum odit expedita quod neque impedit officia eveniet tenetur
-				deserunt dolore quos, veniam ullam consectetur dolorem sit ad cumque! In
-				aut aspernatur sapiente. Sit error magni atque, numquam, quidem sunt
-				aspernatur mollitia asperiores modi explicabo repudiandae suscipit
-				incidunt odio vel quibusdam nobis voluptate soluta enim ab consectetur
-				obcaecati autem! Numquam expedita minima maxime perferendis ad, quas
-				ipsum quia rerum sapiente tempore atque iste quidem reiciendis at
-				cupiditate eligendi voluptatem voluptatibus consectetur tempora amet
-				harum sit veritatis voluptate nobis! Iure. Veniam, ut! Porro minima
-				atque nisi accusamus voluptates praesentium est, veniam, consectetur
-				magnam iste dolores minus, dolorum perspiciatis fugit sed? Amet dolor
-				earum assumenda. Nostrum explicabo quae assumenda alias quas.
-				Repellendus excepturi voluptatibus officia. Non vel ullam facere qui
-				quisquam, enim fugiat. Quidem animi ex hic. Provident, voluptatum sed
-				tempora, est ab, ipsum aspernatur ipsa tempore earum quos ratione
-				laborum? Rem quo laboriosam sunt non autem excepturi, quae unde adipisci
-				illo veritatis, eveniet ex. Soluta beatae, aperiam nemo saepe quisquam
-				eos porro temporibus quidem quis repellendus laborum maxime cum
-				delectus! Mollitia labore facere voluptates nam blanditiis nostrum
-				dolorum velit veritatis tempore debitis? Ea recusandae temporibus
-				suscipit. Neque, ipsam dolorem. Et vitae mollitia omnis velit saepe
-				quasi in, cum dicta reprehenderit! Cupiditate odio adipisci vero velit
-				deserunt doloribus dolor quod rerum quos accusamus minima, aspernatur
-				delectus sint, blanditiis ipsam eligendi praesentium. Doloremque
-				praesentium soluta tempore ex voluptatum explicabo, molestias eum velit.
-				Hic, optio nihil in, fuga deleniti maiores nesciunt recusandae, ducimus
-				fugit necessitatibus aliquid architecto doloribus a unde accusantium
-				voluptate reiciendis aliquam minus aspernatur non inventore ipsa placeat
-				fugiat odio? At. Tempora ad vero, quam saepe quia, similique error nam
-				minima sint soluta facilis nesciunt corrupti delectus reiciendis quod
-				architecto a vitae mollitia cumque molestiae quibusdam. Ad
-				exercitationem cumque repellat assumenda. Sunt velit ullam inventore
-				obcaecati delectus quae dolores, aliquam natus ab odio temporibus
-				officiis, impedit sint. Itaque ad natus voluptates dolore, cumque, harum
-				aut porro quo rerum vel, nobis et! Natus doloremque rem ipsum quo
-				praesentium sapiente mollitia tempora perspiciatis totam! Explicabo
-				doloribus laborum voluptatibus vel quaerat ullam dolor beatae? Dolorum
-				iusto excepturi ducimus aliquid dolores quos amet magnam nam! Quas
-				veniam quos vel voluptatibus facilis, nihil dicta rem aspernatur
-				veritatis dolor ullam provident tempora voluptates voluptatum nam
-				nesciunt. Voluptatum expedita hic iure veniam soluta numquam eligendi
-				veritatis magni ut! In, obcaecati cumque aspernatur optio magnam quo
-				quae est ex dolore quia voluptatum debitis quaerat, asperiores vero.
-				Necessitatibus maiores aspernatur vel, omnis, corporis commodi,
-				laboriosam repellat asperiores alias provident dolores! Possimus esse
-				hic ullam blanditiis velit, eius repellendus, eligendi saepe
-				perspiciatis quam repellat iure aliquid obcaecati dignissimos eveniet
-				nisi ad est veniam officia dolorem sequi itaque corporis. Ipsum, vero
-				qui. Eos corrupti, consectetur velit eum, animi hic repellat illum
-				possimus officiis reprehenderit dolorum veritatis fugiat vero magni
-				minus quos enim architecto molestiae accusantium nisi facere?
-				Consequatur quis quaerat sequi ullam? Laudantium itaque autem voluptates
-				incidunt mollitia modi eius odio earum in ex non quasi, commodi sit
-				minima dolores quibusdam assumenda facilis eveniet. Eaque, libero
-				voluptatum sequi minus beatae quam qui! Culpa amet rerum odio rem
-				tempora cum quam debitis tempore officia distinctio asperiores et
-				numquam, officiis vel tenetur vero quo necessitatibus ipsa, harum sint
-				voluptas corporis. Eaque ipsam veritatis aliquid. Eius odio dolores
-				consequatur eveniet dolor voluptas voluptatem id ipsa aliquid delectus
-				nobis, ab, velit dolore deleniti animi, vero ipsam in perspiciatis.
-				Libero dolorum quis quibusdam laudantium, reprehenderit nesciunt neque.
-				Corporis iure ratione quasi illo qui molestiae quos. Minima magni quos
-				nam deserunt earum, laboriosam consequuntur qui harum possimus ipsam
-				maiores sint ipsum voluptatibus eos voluptas pariatur consequatur esse
-				quidem.
-			</section>
-		</main>
+      <!--партнеры-->
+      <section class="partners">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolores
+        similique earum odit expedita quod neque impedit officia eveniet tenetur
+        deserunt dolore quos, veniam ullam consectetur dolorem sit ad cumque! In
+        aut aspernatur sapiente. Sit error magni atque, numquam, quidem sunt
+        aspernatur mollitia asperiores modi explicabo repudiandae suscipit
+        incidunt odio vel quibusdam nobis voluptate soluta enim ab consectetur
+        obcaecati autem! Numquam expedita minima maxime perferendis ad, quas
+        ipsum quia rerum sapiente tempore atque iste quidem reiciendis at
+        cupiditate eligendi voluptatem voluptatibus consectetur tempora amet
+        harum sit veritatis voluptate nobis! Iure. Veniam, ut! Porro minima
+        atque nisi accusamus voluptates praesentium est, veniam, consectetur
+        magnam iste dolores minus, dolorum perspiciatis fugit sed? Amet dolor
+        earum assumenda. Nostrum explicabo quae assumenda alias quas.
+        Repellendus excepturi voluptatibus officia. Non vel ullam facere qui
+        quisquam, enim fugiat. Quidem animi ex hic. Provident, voluptatum sed
+        tempora, est ab, ipsum aspernatur ipsa tempore earum quos ratione
+        laborum? Rem quo laboriosam sunt non autem excepturi, quae unde adipisci
+        illo veritatis, eveniet ex. Soluta beatae, aperiam nemo saepe quisquam
+        eos porro temporibus quidem quis repellendus laborum maxime cum
+        delectus! Mollitia labore facere voluptates nam blanditiis nostrum
+        dolorum velit veritatis tempore debitis? Ea recusandae temporibus
+        suscipit. Neque, ipsam dolorem. Et vitae mollitia omnis velit saepe
+        quasi in, cum dicta reprehenderit! Cupiditate odio adipisci vero velit
+        deserunt doloribus dolor quod rerum quos accusamus minima, aspernatur
+        delectus sint, blanditiis ipsam eligendi praesentium. Doloremque
+        praesentium soluta tempore ex voluptatum explicabo, molestias eum velit.
+        Hic, optio nihil in, fuga deleniti maiores nesciunt recusandae, ducimus
+        fugit necessitatibus aliquid architecto doloribus a unde accusantium
+        voluptate reiciendis aliquam minus aspernatur non inventore ipsa placeat
+        fugiat odio? At. Tempora ad vero, quam saepe quia, similique error nam
+        minima sint soluta facilis nesciunt corrupti delectus reiciendis quod
+        architecto a vitae mollitia cumque molestiae quibusdam. Ad
+        exercitationem cumque repellat assumenda. Sunt velit ullam inventore
+        obcaecati delectus quae dolores, aliquam natus ab odio temporibus
+        officiis, impedit sint. Itaque ad natus voluptates dolore, cumque, harum
+        aut porro quo rerum vel, nobis et! Natus doloremque rem ipsum quo
+        praesentium sapiente mollitia tempora perspiciatis totam! Explicabo
+        doloribus laborum voluptatibus vel quaerat ullam dolor beatae? Dolorum
+        iusto excepturi ducimus aliquid dolores quos amet magnam nam! Quas
+        veniam quos vel voluptatibus facilis, nihil dicta rem aspernatur
+        veritatis dolor ullam provident tempora voluptates voluptatum nam
+        nesciunt. Voluptatum expedita hic iure veniam soluta numquam eligendi
+        veritatis magni ut! In, obcaecati cumque aspernatur optio magnam quo
+        quae est ex dolore quia voluptatum debitis quaerat, asperiores vero.
+        Necessitatibus maiores aspernatur vel, omnis, corporis commodi,
+        laboriosam repellat asperiores alias provident dolores! Possimus esse
+        hic ullam blanditiis velit, eius repellendus, eligendi saepe
+        perspiciatis quam repellat iure aliquid obcaecati dignissimos eveniet
+        nisi ad est veniam officia dolorem sequi itaque corporis. Ipsum, vero
+        qui. Eos corrupti, consectetur velit eum, animi hic repellat illum
+        possimus officiis reprehenderit dolorum veritatis fugiat vero magni
+        minus quos enim architecto molestiae accusantium nisi facere?
+        Consequatur quis quaerat sequi ullam? Laudantium itaque autem voluptates
+        incidunt mollitia modi eius odio earum in ex non quasi, commodi sit
+        minima dolores quibusdam assumenda facilis eveniet. Eaque, libero
+        voluptatum sequi minus beatae quam qui! Culpa amet rerum odio rem
+        tempora cum quam debitis tempore officia distinctio asperiores et
+        numquam, officiis vel tenetur vero quo necessitatibus ipsa, harum sint
+        voluptas corporis. Eaque ipsam veritatis aliquid. Eius odio dolores
+        consequatur eveniet dolor voluptas voluptatem id ipsa aliquid delectus
+        nobis, ab, velit dolore deleniti animi, vero ipsam in perspiciatis.
+        Libero dolorum quis quibusdam laudantium, reprehenderit nesciunt neque.
+        Corporis iure ratione quasi illo qui molestiae quos. Minima magni quos
+        nam deserunt earum, laboriosam consequuntur qui harum possimus ipsam
+        maiores sint ipsum voluptatibus eos voluptas pariatur consequatur esse
+        quidem.
+      </section>
+    </main>
 
-		<!--Контакты-->
-		<footer
-			class="footer"
-			id="footer">
-			<div class="footer__contact">
-				<div>
-					<a href="tel:+7-123-456-78-90">+7-123-456-78-90</a>
-				</div>
-				<div>
-					<a href="mailto:tkvartirakzn@mail.ru?subject=привет&body=вопрос"
-						>tkvartirakzn@mail.ru</a
-					>
-				</div>
-			</div>
-			<!-- кнопка хочу помочь начинается здесь -->
-			<a
-				href="./donate.html"
-				target="_blank">
-				<div class="donate">Хочу помочь</div>
-			</a>
-			<!-- кнопка хочу помочь заканчивается здесь -->
-			<div class="footer__follow">
-				Следите за нашими новостями:
-				<a
-					href="https://t.me/ProstoDrugie"
-					target="_blank">
-					<img
-						src="./assets/img/footer/tg.svg"
-						alt="telegram" />
-				</a>
-				<a
-					href="https://vk.com/prosto.drugie_kazan"
-					target="_blank">
-					<img
-						src="./assets/img/footer/vk.svg"
-						alt="vk" />
-				</a>
-			</div>
-			<a
-				href="#top"
-				class="up"
-				>вверх</a
-			>
-		</footer>
-	</body>
+    <!--Контакты-->
+    <footer class="footer" id="footer">
+      <div class="footer__contact">
+        <div>
+          <a href="tel:+7-123-456-78-90">+7-123-456-78-90</a>
+        </div>
+        <div>
+          <a href="mailto:tkvartirakzn@mail.ru?subject=привет&body=вопрос"
+            >tkvartirakzn@mail.ru</a
+          >
+        </div>
+      </div>
+      <!-- кнопка хочу помочь начинается здесь -->
+      <a href="./donate.html" target="_blank">
+        <div class="donate">Хочу помочь</div>
+      </a>
+      <!-- кнопка хочу помочь заканчивается здесь -->
+      <div class="footer__follow">
+        Следите за нашими новостями:
+        <a href="https://t.me/ProstoDrugie" target="_blank">
+          <img src="./assets/img/footer/tg.svg" alt="telegram" />
+        </a>
+        <a href="https://vk.com/prosto.drugie_kazan" target="_blank">
+          <img src="./assets/img/footer/vk.svg" alt="vk" />
+        </a>
+      </div>
+      <a href="#top" class="up">вверх</a>
+    </footer>
+  </body>
 </html>
