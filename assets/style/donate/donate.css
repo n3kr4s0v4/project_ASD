@@ -108,7 +108,7 @@
 .menu__nav ul .dropdown-menu {
   display: none;
   position: absolute;
-  top: 75%;
+  top: 70%;
   background-color: #EBF5F4;
   font-size: 0.9rem;
   align-items: start;
