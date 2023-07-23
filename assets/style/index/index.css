@@ -81,14 +81,12 @@
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  padding-left: 6vw;
-  padding-right: 6vw;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
   .menu__nav ul {
     display: block;
-    padding-bottom: 2vw;
+    padding-bottom: 1vw;
     box-sizing: border-box;
   }
 }
@@ -111,7 +109,7 @@
 .menu__nav ul .dropdown-menu {
   display: none;
   position: absolute;
-  top: 75%;
+  top: 70%;
   background-color: #EBF5F4;
   font-size: 0.9rem;
   align-items: start;

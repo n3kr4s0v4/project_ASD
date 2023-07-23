@@ -5,7 +5,11 @@
 .body {
     display: flex;
 	flex-direction: column;
-    height: 100vh;
+    height: 101vh;
+
+    @media screen and (max-width: $tablet) {
+        height: 100vh;
+    }
 }
 
 .home {
@@ -26,7 +30,7 @@
 		background-color: $basic-light;
 		}
 
-        @media screen and (max-width: $mobile) {
+        @media screen and (max-width: $tablet) {
             margin: 0 auto;
         }
 }
@@ -44,7 +48,7 @@
     color: $basic;
     flex-grow: 1;
 
-    @media screen and (max-width:$mobile){
+    @media screen and (max-width:$tablet){
         flex-direction: column;
         gap: 4vh;
     }
@@ -54,7 +58,7 @@
     margin: 2vh 6vw;
     text-align: center;
     flex:none;
-    @media screen and (max-width:$mobile){
+    @media screen and (max-width:$tablet){
         font-size: 2vh;
     }
 }
@@ -68,7 +72,7 @@
     margin: 10vh auto;
     flex-grow:1;
 
-    @media screen and (max-width:$mobile){
+    @media screen and (max-width:$tablet){
         flex-direction: column;
         gap: 4vh;
         font-size: 2vh;
@@ -81,7 +85,7 @@
         width: 20vw;
         margin: auto 2vw;
 
-        @media screen and (max-width:$mobile){
+        @media screen and (max-width:$tablet){
             width: 55vw;
             margin: auto 2vw;
         }
