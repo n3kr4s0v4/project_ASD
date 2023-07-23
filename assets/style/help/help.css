@@ -43,10 +43,13 @@
 .help__box {
   background-color: #EBF5F4;
   width: 100vw;
+  min-height: 200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
 }
 @media screen and (max-width: 576px) {
   .help__box {
@@ -56,16 +59,39 @@
 .help__box .help__title {
   color: #266FB4;
   width: 0 auto;
+  text-align: center;
   font-family: Caveat;
   font-size: 6rem;
   background-color: #EBF5F4;
+}
+@media screen and (max-width: 768px) {
+  .help__box .help__title {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .help__box .help__title {
+    font-size: 3rem;
+  }
 }
 .help__box .help__desc {
   color: #266FB4;
   font-family: Mulish;
   font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
   font-weight: 700;
   line-height: 130%;
+}
+@media screen and (max-width: 768px) {
+  .help__box .help__desc {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .help__box .help__desc {
+    font-size: 1.5rem;
+  }
 }
 .help__box .help__desc .help__MAIL {
   text-decoration: none;
@@ -82,4 +108,15 @@
   line-height: 130%; /* 52px */
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .help__box .help__anket .anket {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .help__box .help__anket .anket {
+    font-size: 1.3rem;
+  }
 }/*# sourceMappingURL=help.css.map */
