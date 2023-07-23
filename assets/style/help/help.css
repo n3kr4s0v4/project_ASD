@@ -1,1 +1,85 @@
-/*# sourceMappingURL=help.css.map */
+@font-face {
+  font-family: "Caveat";
+  src: url(../../fonts/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Mulish";
+  src: url(../../fonts/Mulish-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Mulish_italic";
+  src: url(../../fonts/Mulish-Italic-VariableFont_wght.ttf);
+}
+.donate {
+  display: flex;
+  font-family: "Mulish";
+  border-radius: 89px;
+  padding: 1em 2em;
+  background-color: #622C8E;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+}
+.donate:hover, .donate:active {
+  background-color: #866BAE;
+}
+@media screen and (max-width: 576px) {
+  .donate {
+    margin: 0 auto;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid blueviolet; */
+}
+
+.help__box {
+  background-color: #EBF5F4;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  .help__box {
+    margin: 0 auto;
+  }
+}
+.help__box .help__title {
+  color: #266FB4;
+  width: 0 auto;
+  font-family: Caveat;
+  font-size: 6rem;
+  background-color: #EBF5F4;
+}
+.help__box .help__desc {
+  color: #266FB4;
+  font-family: Mulish;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 130%;
+}
+.help__box .help__desc .help__MAIL {
+  text-decoration: none;
+  color: #266FB4;
+}
+.help__box .help__desc .help__MAIL:hover {
+  color: #622C8E;
+}
+.help__box .help__anket .anket {
+  color: #622C8E;
+  font-family: Mulish;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 130%; /* 52px */
+  text-transform: uppercase;
+  text-decoration: none;
+}/*# sourceMappingURL=help.css.map */

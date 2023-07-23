@@ -1,0 +1,58 @@
+@import "../templates/templates";
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   /* border: 1px solid blueviolet; */
+}
+
+.help__box {
+   background-color: $bg;
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   @media screen and (max-width: $tablet) {
+   }
+
+   @media screen and (max-width: $mobile) {
+      margin: 0 auto;
+   }
+
+   .help__title {
+      color: $basic;
+      width: 0 auto;
+      font-family: Caveat;
+      font-size: 6rem;
+      background-color: $bg;
+   }
+
+   .help__desc {
+      color: $basic;
+      font-family: Mulish;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 130%;
+      .help__MAIL {
+         text-decoration: none;
+         color: $basic;
+      }
+      .help__MAIL:hover {
+         color: $accent;
+      }
+   }
+   .help__anket {
+      .anket {
+         color: $accent;
+         font-family: Mulish;
+         font-size: 2rem;
+         font-weight: 700;
+         line-height: 130%; /* 52px */
+         text-transform: uppercase;
+         text-decoration: none;
+      }
+   }
+}
