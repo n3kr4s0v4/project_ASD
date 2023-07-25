@@ -100,7 +100,7 @@
 .help__box .help__desc .help__MAIL:hover {
   color: #622C8E;
 }
-.help__box .help__anket .anket {
+.help__box .help__anket {
   color: #622C8E;
   font-family: Mulish;
   font-size: 2rem;
@@ -111,12 +111,12 @@
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  .help__box .help__anket .anket {
+  .help__box .help__anket {
     font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 576px) {
-  .help__box .help__anket .anket {
+  .help__box .help__anket {
     font-size: 1.3rem;
   }
 }/*# sourceMappingURL=help.css.map */

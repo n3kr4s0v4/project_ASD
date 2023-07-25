@@ -67,23 +67,21 @@
       }
    }
    .help__anket {
-      .anket {
-         color: $accent;
-         font-family: Mulish;
-         font-size: 2rem;
-         font-weight: 700;
-         line-height: 130%; /* 52px */
-         text-transform: uppercase;
-         text-decoration: none;
-         text-align: center;
+      color: $accent;
+      font-family: Mulish;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 130%; /* 52px */
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
 
-         @media screen and (max-width: $tablet) {
-            font-size: 1.8rem;
-         }
+      @media screen and (max-width: $tablet) {
+         font-size: 1.8rem;
+      }
 
-         @media screen and (max-width: $mobile) {
-            font-size: 1.3rem;
-         }
+      @media screen and (max-width: $mobile) {
+         font-size: 1.3rem;
       }
    }
 }

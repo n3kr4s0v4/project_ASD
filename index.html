@@ -1,102 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<title>Просто другие</title>
-		<link
-			href="./assets/style/normalize.css"
-			rel="stylesheet" />
-		<link
-			href="./assets/style/index/index.css"
-			rel="stylesheet" />
-	</head>
-	<body>
-		<!--Тут кнопка, меню-->
-		<header class="header">
-			<!-- кнопка хочу помочь начинается здесь -->
-			<a href="./donate.html">
-				<div class="donate">Хочу помочь</div>
-			</a>
-			<!-- кнопка хочу помочь заканчивается здесь -->
-			<div class="menu">
-				<input
-					type="checkbox"
-					id="burger" />
-				<label for="burger"></label>
-				<nav class="menu__nav">
-					<ul>
-						<li>
-							<a
-								href="#about"
-								class="menu__title"
-								>О нас</a
-							>
-						</li>
-						<li>
-							<a
-								href="./team.html"
-								class="menu__title"
-								>Команда</a
-							>
-						</li>
-						<li>
-							<a
-								href="./news.html"
-								class="menu__title"
-								>События</a
-							>
-						</li>
-						<li>
-							<a
-								href="#footer"
-								class="menu__title"
-								>Контакты</a
-							>
-						</li>
-						<li class="dropdown">
-							<a
-								href="#projects"
-								class="menu__title"
-								>Проекты</a
-							>
-							<ul class="dropdown-menu">
-								<li>
-									<a
-										href="./project1.html"
-										class="menu__title"
-										>Учебно-тренировочная квартира</a
-									>
-								</li>
-								<li>
-									<a
-										href="./project2.html"
-										class="menu__title"
-										>Инклюзивная творческая студия «Просто другие»</a
-									>
-								</li>
-								<li>
-									<a
-										href="./project3.html"
-										class="menu__title"
-										>НИИ: НАУКА И ИНКЛЮЗИЯ</a
-									>
-								</li>
-								<li>
-									<a
-										href="./project4.html"
-										class="menu__title"
-										>Культурный код 2.0</a
-									>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Просто другие</title>
+	<link href="./assets/style/normalize.css" rel="stylesheet" />
+	<link href="./assets/style/index/index.css" rel="stylesheet" />
+</head>
+
+<body>
+	<!--Тут кнопка, меню-->
+	<header class="header">
+		<!-- кнопка хочу помочь начинается здесь -->
+		<a href="./donate.html">
+			<div class="donate">Хочу помочь</div>
+		</a>
+		<!-- кнопка хочу помочь заканчивается здесь -->
+		<div class="menu">
+			<input type="checkbox" id="burger" />
+			<label for="burger"></label>
+			<nav class="menu__nav">
+				<ul>
+					<li>
+						<a href="#about" class="menu__title">О нас</a>
+					</li>
+					<li>
+						<a href="./team.html" class="menu__title">Команда</a>
+					</li>
+					<li>
+						<a href="./news.html" class="menu__title">События</a>
+					</li>
+					<li>
+						<a href="#footer" class="menu__title">Контакты</a>
+					</li>
+					<li class="dropdown">
+						<a href="#projects" class="menu__title">Проекты</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="./project1.html" class="menu__title">Учебно-тренировочная квартира</a>
+							</li>
+							<li>
+								<a href="./project2.html" class="menu__title">Инклюзивная творческая студия «Просто
+									другие»</a>
+							</li>
+							<li>
+								<a href="./project3.html" class="menu__title">НИИ: НАУКА И ИНКЛЮЗИЯ</a>
+							</li>
+							<li>
+								<a href="./project4.html" class="menu__title">Культурный код 2.0</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 	<!--Основная секция-->
 	<main class="main">
 		<!--Блок с лозунгом-->
@@ -142,14 +101,9 @@
 		<!--Помощь-->
 		<div class="help">
 			<div class="help__box">
-				<div class="help__title">Как получить помощь?</div>
-				<div class="help__desc">Просим Вас заполнить анкету и отправить на почту
-					<a class="help__MAIL" href="mailto:tkvartira@mail.ru">tkvartira@mail.ru
-					</a>
-				</div>
-				<div class="help__anket">
-					<a class="anket" href="#" download title="Скачать анкету">Заполнить анкету</a>
-				</div>
+				<p class="help__title">Как получить помощь?</p>
+				<p class="help__desc">Просим Вас заполнить анкету</p>
+				<a class="help__anket" href="https://forms.gle/U1ZNtuY57Fgd8wZS9">Заполнить анкету</a>
 			</div>
 		</div>
 
@@ -226,23 +180,19 @@
 			quidem.
 		</section>
 	</main>
-		<!--Контакты-->
-		<footer
-			class="footer"
-			id="footer">
-			<div class="footer__contact">
-				<div>
-					<a href="tel:+7-123-456-78-90">+7-123-456-78-90</a>
-				</div>
-				<div>
-					<a href="mailto:tkvartirakzn@mail.ru?subject=привет&body=вопрос"
-						>tkvartirakzn@mail.ru</a
-					>
-				</div>
+	<!--Контакты-->
+	<footer class="footer" id="footer">
+		<div class="footer__contact">
+			<div>
+				<a href="tel:+7-123-456-78-90">+7-123-456-78-90</a>
 			</div>
 			<div>
 				<a href="mailto:tkvartirakzn@mail.ru?subject=привет&body=вопрос">tkvartirakzn@mail.ru</a>
 			</div>
+		</div>
+		<div>
+			<a href="mailto:tkvartirakzn@mail.ru?subject=привет&body=вопрос">tkvartirakzn@mail.ru</a>
+		</div>
 		</div>
 		<!-- кнопка хочу помочь начинается здесь -->
 		<a href="./donate.html" target="_blank">
