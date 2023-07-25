@@ -58,14 +58,8 @@
       @media screen and (max-width: $mobile) {
          font-size: 1.5rem;
       }
-      .help__MAIL {
-         text-decoration: none;
-         color: $basic;
-      }
-      .help__MAIL:hover {
-         color: $accent;
-      }
    }
+
    .help__anket {
       color: $accent;
       font-family: Mulish;

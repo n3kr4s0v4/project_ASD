@@ -93,13 +93,6 @@
     font-size: 1.5rem;
   }
 }
-.help__box .help__desc .help__MAIL {
-  text-decoration: none;
-  color: #266FB4;
-}
-.help__box .help__desc .help__MAIL:hover {
-  color: #622C8E;
-}
 .help__box .help__anket {
   color: #622C8E;
   font-family: Mulish;
