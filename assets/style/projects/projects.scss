@@ -1,7 +1,42 @@
 @import "../templates/_templates";
 
+.project1 {
+	grid-area: pr1;
+}
+
+.project2 {
+	grid-area: pr2;
+}
+
+.project3 {
+	grid-area: pr3;
+}
+
+.project4 {
+	grid-area: pr4;
+}
 .projects {
 	background-color: $bg;
+	display: grid;
+	grid-template-areas:
+		"pt pt"
+		"pr1 pr2"
+		"pr3 pr4";
+	grid-template-columns: repeat(5em, 2);
+	grid-template-rows: 5em repeat(5em, 2);
+	gap: 2vw;
+	padding: $padding-side;
+
+	@media screen and (max-width: $tablet) {
+		display: grid;
+		grid-template-areas:
+			"pt"
+			"pr1"
+			"pr2"
+			"pr3"
+			"pr4";
+		grid-template-rows: repeat(5em, 5);
+	}
 }
 
 .projects__title {
@@ -12,4 +47,31 @@
 	text-transform: uppercase;
 	display: flex;
 	justify-content: center;
+	grid-area: pt;
+}
+
+.project__text {
+	color: $basic;
+	font-family: Roboto Slab;
+	font-weight: 400;
+	font-size: 42px;
+	padding-bottom: 1vw;
+}
+
+.projects__button {
+	background-color: $basic;
+	color: $light;
+	max-width: fit-content;
+	display: flex;
+	justify-content: center;
+	padding: 1em 2em;
+	align-items: center;
+	border-radius: 89px;
+	font-family: Mulish;
+	font-weight: 800;
+	border: $basic;
+}
+
+.link__project {
+	text-decoration: none;
 }
