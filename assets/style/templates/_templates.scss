@@ -1,50 +1,55 @@
 @font-face {
-    font-family: "Caveat";
-    src: url(../../fonts/Caveat-VariableFont_wght.ttf)
+	font-family: "Caveat";
+	src: url(../../fonts/Caveat-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: "Mulish";
-    src: url(../../fonts/Mulish-VariableFont_wght.ttf);
+	font-family: "Mulish";
+	src: url(../../fonts/Mulish-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: "Mulish_italic";
-    src: url(../../fonts/Mulish-Italic-VariableFont_wght.ttf);
+	font-family: "Mulish_italic";
+	src: url(../../fonts/Mulish-Italic-VariableFont_wght.ttf);
 }
 
-$bg: #EBF5F4;
+@font-face {
+	font-family: Roboto Slab;
+	src: url(../../fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
+$bg: #ebf5f4;
 $bg-dark: #bae9e47d;
-$accent: #622C8E;
-$accent-light: #866BAE;
-$basic: #266FB4;
-$basic-light: #287DCD;
+$accent: #622c8e;
+$accent-light: #866bae;
+$basic: #266fb4;
+$basic-light: #287dcd;
 $light: #ffffff;
 
 $mobile: 576px;
 $tablet: 768px;
 
-$padding-side:6vw;
+$padding-side: 6vw;
 
 .donate {
-    display: flex;
-    font-family: "Mulish";
-    border-radius: 89px;
-    padding: 1em 2em;
-    background-color: $accent;
-    max-width: fit-content;
-    text-decoration: none;
-    color: $light;
-    text-transform: uppercase;
-    font-weight: 800;
-    text-align: center;
+	display: flex;
+	font-family: "Mulish";
+	border-radius: 89px;
+	padding: 1em 2em;
+	background-color: $accent;
+	max-width: fit-content;
+	text-decoration: none;
+	color: $light;
+	text-transform: uppercase;
+	font-weight: 800;
+	text-align: center;
 
-    &:hover,
+	&:hover,
 	&:active {
 		background-color: $accent-light;
-        }
+	}
 
-        @media screen and (max-width: $mobile) {
-            margin: 0 auto;
-        }
+	@media screen and (max-width: $mobile) {
+		margin: 0 auto;
+	}
 }

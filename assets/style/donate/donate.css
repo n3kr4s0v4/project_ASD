@@ -10,12 +10,16 @@
   font-family: "Mulish_italic";
   src: url(../../fonts/Mulish-Italic-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: Roboto Slab;
+  src: url(../../fonts/RobotoSlab-VariableFont_wght.ttf);
+}
 .donate {
   display: flex;
   font-family: "Mulish";
   border-radius: 89px;
   padding: 1em 2em;
-  background-color: #622C8E;
+  background-color: #622c8e;
   max-width: -moz-fit-content;
   max-width: fit-content;
   text-decoration: none;
@@ -25,7 +29,7 @@
   text-align: center;
 }
 .donate:hover, .donate:active {
-  background-color: #866BAE;
+  background-color: #866bae;
 }
 @media screen and (max-width: 576px) {
   .donate {
@@ -38,15 +42,15 @@
   display: flex;
   align-items: center;
   padding: 1vw 6vw;
-  background-color: #EBF5F4;
-  color: #266FB4;
+  background-color: #ebf5f4;
+  color: #266fb4;
   justify-content: space-between;
   position: sticky;
   top: 0;
 }
 .header a {
   text-decoration: none;
-  color: #266FB4;
+  color: #266fb4;
 }
 .header .donate {
   justify-self: center;
@@ -108,7 +112,7 @@
   display: none;
   position: absolute;
   top: 70%;
-  background-color: #EBF5F4;
+  background-color: #ebf5f4;
   font-size: 0.9rem;
   align-items: start;
   padding: 2vw 6vw 1vw 1vw;
@@ -171,7 +175,7 @@
     position: absolute;
     transform: translate(0, 5%);
     right: 0;
-    background-color: #EBF5F4;
+    background-color: #ebf5f4;
     height: -moz-fit-content;
     height: fit-content;
     line-height: 200%;
@@ -192,12 +196,12 @@
   grid-template-columns: 1fr 2fr 2fr;
   grid-template-rows: 1fr;
   padding: 1vw 6vw;
-  background-color: #EBF5F4;
-  color: #266FB4;
+  background-color: #ebf5f4;
+  color: #266fb4;
 }
 .footer a {
   text-decoration: none;
-  color: #266FB4;
+  color: #266fb4;
 }
 .footer .donate {
   margin: 0 auto;
@@ -260,7 +264,7 @@
   font-family: "Mulish";
   border-radius: 89px;
   padding: 1em 2em;
-  background-color: #266FB4;
+  background-color: #266fb4;
   max-width: -moz-fit-content;
   max-width: fit-content;
   text-decoration: none;
@@ -270,7 +274,7 @@
   text-align: center;
 }
 .home:hover, .home:active {
-  background-color: #287DCD;
+  background-color: #287dcd;
 }
 @media screen and (max-width: 768px) {
   .home {
@@ -285,8 +289,8 @@
 .main {
   font-family: "Mulish";
   padding: 2vh 6vw;
-  background-color: #EBF5F4;
-  color: #266FB4;
+  background-color: #ebf5f4;
+  color: #266fb4;
   flex-grow: 1;
 }
 @media screen and (max-width: 768px) {
