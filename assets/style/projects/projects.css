@@ -10,12 +10,16 @@
   font-family: "Mulish_italic";
   src: url(../../fonts/Mulish-Italic-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: Roboto Slab;
+  src: url(../../fonts/RobotoSlab-VariableFont_wght.ttf);
+}
 .donate {
   display: flex;
   font-family: "Mulish";
   border-radius: 89px;
   padding: 1em 2em;
-  background-color: #622C8E;
+  background-color: #622c8e;
   max-width: -moz-fit-content;
   max-width: fit-content;
   text-decoration: none;
@@ -25,7 +29,7 @@
   text-align: center;
 }
 .donate:hover, .donate:active {
-  background-color: #866BAE;
+  background-color: #866bae;
 }
 @media screen and (max-width: 576px) {
   .donate {
@@ -33,16 +37,73 @@
   }
 }
 
+.project1 {
+  grid-area: pr1;
+}
+
+.project2 {
+  grid-area: pr2;
+}
+
+.project3 {
+  grid-area: pr3;
+}
+
+.project4 {
+  grid-area: pr4;
+}
+
 .projects {
-  background-color: #EBF5F4;
+  background-color: #ebf5f4;
+  display: grid;
+  grid-template-areas: "pt pt" "pr1 pr2" "pr3 pr4";
+  grid-template-columns: repeat(5em, 2);
+  grid-template-rows: 5em repeat(5em, 2);
+  gap: 2vw;
+  padding: 6vw;
+}
+@media screen and (max-width: 768px) {
+  .projects {
+    display: grid;
+    grid-template-areas: "pt" "pr1" "pr2" "pr3" "pr4";
+    grid-template-rows: repeat(5em, 5);
+  }
 }
 
 .projects__title {
   font-family: Caveat;
   font-size: 64px;
   font-style: normal;
-  color: #266FB4;
+  color: #266fb4;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
+  grid-area: pt;
+}
+
+.project__text {
+  color: #266fb4;
+  font-family: Roboto Slab;
+  font-weight: 400;
+  font-size: 42px;
+  padding-bottom: 1vw;
+}
+
+.projects__button {
+  background-color: #266fb4;
+  color: #ffffff;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  padding: 1em 2em;
+  align-items: center;
+  border-radius: 89px;
+  font-family: Mulish;
+  font-weight: 800;
+  border: #266fb4;
+}
+
+.link__project {
+  text-decoration: none;
 }/*# sourceMappingURL=projects.css.map */
