@@ -70,6 +70,14 @@
 	font-family: Mulish;
 	font-weight: 800;
 	border: $basic;
+	&:hover,
+	&:active {
+		background-color: $basic-light;
+	}
+
+	@media screen and (max-width: $tablet) {
+		margin: 0 auto;
+	}
 }
 
 .link__project {

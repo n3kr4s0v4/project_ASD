@@ -103,6 +103,14 @@
   font-weight: 800;
   border: #266fb4;
 }
+.projects__button:hover, .projects__button:active {
+  background-color: #287dcd;
+}
+@media screen and (max-width: 768px) {
+  .projects__button {
+    margin: 0 auto;
+  }
+}
 
 .link__project {
   text-decoration: none;
