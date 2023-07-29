@@ -42,7 +42,13 @@
   padding: 6vw;
   max-width: 100vw;
   background-image: url(../../img/projects/back.png);
-  background-size: cover;
+  background-size: 100%;
+}
+@media screen and (max-width: 576px) {
+  .projects {
+    background-image: url(../../img/projects/back.png);
+    background-size: 100%;
+  }
 }
 
 .projects__title {
