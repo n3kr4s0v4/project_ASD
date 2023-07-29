@@ -5,7 +5,11 @@
 	padding: $padding-side;
 	max-width: 100vw;
 	background-image: url(../../img/projects/back.png);
-	background-size: cover;
+	background-size: 100%;
+	@media screen and (max-width: $mobile) {
+		background-image: url(../../img/projects/back.png);
+		background-size: 100%;
+	}
 }
 
 .projects__title {
