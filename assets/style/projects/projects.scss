@@ -19,6 +19,10 @@
 	align-content: center;
 	margin-bottom: 1vw;
 	margin-top: -5vw;
+
+	@media screen and (max-width: $mobile) {
+		font-size: 7.5vw;
+	}
 }
 
 .project__text {
@@ -30,8 +34,8 @@
 	padding-bottom: 1vw;
 
 	@media screen and (max-width: $mobile) {
-		width: 45vw;
-		font-size: 3vw;
+		width: 65vw;
+		font-size: 5vw;
 	}
 }
 
@@ -55,6 +59,13 @@
 		font-weight: 800;
 		font-size: 1.5vw;
 		padding: 1em 2em;
+
+		@media screen and (max-width: $mobile) {
+			font-size: 2.5vw;
+		}
+	}
+	@media screen and (max-width: $mobile) {
+		max-width: 20vw;
 	}
 }
 .link__project {

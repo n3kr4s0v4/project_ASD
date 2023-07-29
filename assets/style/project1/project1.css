@@ -303,7 +303,7 @@
 @media screen and (max-width: 576px) {
   .resourse-text__title {
     width: 90vw;
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 
@@ -320,7 +320,7 @@
 @media screen and (max-width: 576px) {
   .resourse__text {
     width: 90vw;
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
 }
 
