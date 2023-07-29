@@ -325,4 +325,105 @@
 }
 .all-news:hover, .all-news:active {
   background-color: #866bae;
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url(../../fonts/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Mulish";
+  src: url(../../fonts/Mulish-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Mulish_italic";
+  src: url(../../fonts/Mulish-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Roboto Slab;
+  src: url(../../fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+.donate {
+  display: flex;
+  font-family: "Mulish";
+  border-radius: 89px;
+  padding: 1em 2em;
+  background-color: #622c8e;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+}
+.donate:hover, .donate:active {
+  background-color: #866bae;
+}
+@media screen and (max-width: 576px) {
+  .donate {
+    margin: 0 auto;
+  }
+}
+
+.partners__title {
+  font-family: Caveat;
+  font-size: 45px;
+  color: #266fb4;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.partners {
+  background-color: #ebf5f4;
+  padding: 6vw;
+}
+
+.partners__img {
+  display: grid;
+  grid-template-areas: "dk fpg heart marhamat open" "region sirius soviet tatneft way";
+  grid-template-rows: repeat(2, 25vh);
+  gap: 0.5em;
+}
+
+.partners__dk {
+  grid-area: dk;
+}
+
+.partners__fpg {
+  grid-area: fpg;
+}
+
+.partners__heart {
+  grid-area: heart;
+}
+
+.partners__marhamat {
+  grid-area: marhamat;
+}
+
+.partners__open {
+  grid-area: open;
+}
+
+.partners__region {
+  grid-area: region;
+}
+
+.partners__sirius {
+  grid-area: sirius;
+}
+
+.partners__soviet {
+  grid-area: soviet;
+}
+
+.partners__tatneft {
+  grid-area: tatneft;
+}
+
+.partners__way {
+  grid-area: way;
 }/*# sourceMappingURL=index.css.map */

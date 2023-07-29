@@ -3,9 +3,8 @@
 @import "../footer/_footer";
 
 .class__resourse {
-	width: 50vw;
-	height: 50wh;
 	background-color: $bg;
+	padding: $padding-side;
 }
 
 .home {
@@ -29,4 +28,72 @@
 	@media screen and (max-width: $mobile) {
 		margin: 0 auto;
 	}
+}
+
+.resourse__title {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0.5em;
+	color: $basic;
+	font-family: Caveat;
+	font-size: 59px;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.resourse-text__title {
+	color: $basic;
+	font-family: Caveat;
+	font-size: 50px;
+	font-weight: 500;
+	padding: 0.5em;
+}
+
+.resourse__text {
+	display: flex;
+	color: $basic;
+	font-family: Mulish;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 400;
+	padding: 0.5em;
+	flex-direction: column;
+}
+
+.resourse__img {
+	display: grid;
+	grid-template-areas:
+		"img1 img2"
+		"img3 img4"
+		"img5 img6";
+	gap: 2.5em;
+}
+
+.img__1 {
+	grid-area: img1;
+}
+
+.img__2 {
+	grid-area: img2;
+}
+
+.img__3 {
+	grid-area: img3;
+}
+
+.img__4 {
+	grid-area: img4;
+}
+
+.img__5 {
+	grid-area: img5;
+}
+
+.img__6 {
+	grid-area: img6;
+}
+
+a {
+	text-decoration: none;
+	color: $accent;
 }

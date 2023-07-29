@@ -9,7 +9,6 @@
 
 .help__box {
 	background-color: $bg;
-	width: 100vw;
 	min-height: 200px;
 	margin: 0 auto;
 	display: flex;
@@ -54,28 +53,27 @@
 		@media screen and (max-width: $tablet) {
 			font-size: 1.8rem;
 		}
-      @media screen and (max-width: $mobile) {
-         font-size: 1.5rem;
-      }
-   }
+		@media screen and (max-width: $mobile) {
+			font-size: 1.5rem;
+		}
+	}
 
-   .help__anket {
-      color: $accent;
-      font-family: Mulish;
-      font-size: 2rem;
-      font-weight: 700;
-      line-height: 130%; /* 52px */
-      text-transform: uppercase;
-      text-decoration: none;
-      text-align: center;
+	.help__anket {
+		color: $accent;
+		font-family: Mulish;
+		font-size: 2rem;
+		font-weight: 700;
+		line-height: 130%; /* 52px */
+		text-transform: uppercase;
+		text-decoration: none;
+		text-align: center;
 
-      @media screen and (max-width: $tablet) {
-         font-size: 1.8rem;
-      }
+		@media screen and (max-width: $tablet) {
+			font-size: 1.8rem;
+		}
 
-      @media screen and (max-width: $mobile) {
-         font-size: 1.3rem;
-      }
-   }
-
+		@media screen and (max-width: $mobile) {
+			font-size: 1.3rem;
+		}
+	}
 }

@@ -1,0 +1,72 @@
+@import "../templates/_templates";
+
+.partners__title {
+	font-family: Caveat;
+	font-size: 45px;
+	color: $basic;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.partners {
+	background-color: $bg;
+	padding: $padding-side;
+}
+
+.partners__img {
+	display: grid;
+	width: 80vw;
+	padding: $padding-side;
+	grid-template-areas:
+		"dk fpg heart marhamat open"
+		"region sirius soviet tatneft way";
+	grid-template-rows: repeat(2, 25vh);
+	gap: 5.5em;
+
+	img {
+		height: auto;
+		width: min-content;
+	}
+}
+
+.partners__dk {
+	grid-area: dk;
+}
+
+.partners__fpg {
+	grid-area: fpg;
+}
+
+.partners__heart {
+	grid-area: heart;
+}
+
+.partners__marhamat {
+	grid-area: marhamat;
+}
+
+.partners__open {
+	grid-area: open;
+}
+
+.partners__region {
+	grid-area: region;
+}
+
+.partners__sirius {
+	grid-area: sirius;
+}
+
+.partners__soviet {
+	grid-area: soviet;
+}
+
+.partners__tatneft {
+	grid-area: tatneft;
+}
+
+.partners__way {
+	grid-area: way;
+}

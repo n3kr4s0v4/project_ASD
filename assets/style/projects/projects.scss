@@ -2,59 +2,59 @@
 
 .project1 {
 	grid-area: pr1;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
 }
 
 .project2 {
 	grid-area: pr2;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
 }
 
 .project3 {
 	grid-area: pr3;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
 }
 
 .project4 {
 	grid-area: pr4;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
 }
 .projects {
 	background-color: $bg;
-	display: grid;
-	grid-template-areas:
-		"pt pt"
-		"pr1 pr2"
-		"pr3 pr4";
-	grid-template-columns: repeat(5em, 2);
-	grid-template-rows: 5em repeat(5em, 2);
-	gap: 2vw;
 	padding: $padding-side;
-
-	@media screen and (max-width: $tablet) {
-		display: grid;
-		grid-template-areas:
-			"pt"
-			"pr1"
-			"pr2"
-			"pr3"
-			"pr4";
-		grid-template-rows: repeat(5em, 5);
+	max-width: 100vw;
+	background-image: url(../../img/projects/back.png);
+	@media screen and (max-width: 1270px) and (min-width: $tablet) {
+		max-width: 100vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 }
 
 .projects__title {
 	font-family: Caveat;
-	font-size: 64px;
+	font-size: 59px;
 	font-style: normal;
 	color: $basic;
 	text-transform: uppercase;
 	display: flex;
 	justify-content: center;
+	align-content: center;
 	grid-area: pt;
+	margin-bottom: 0.5em;
 }
 
 .project__text {
 	color: $basic;
 	font-family: Roboto Slab;
 	font-weight: 400;
-	font-size: 42px;
+	font-size: 37px;
+	max-width: 25vw;
 	padding-bottom: 1vw;
 }
 
@@ -70,6 +70,7 @@
 	font-family: Mulish;
 	font-weight: 800;
 	border: $basic;
+	margin-bottom: 0.5em;
 	&:hover,
 	&:active {
 		background-color: $basic-light;
@@ -82,4 +83,10 @@
 
 .link__project {
 	text-decoration: none;
+}
+
+.projects__cont,
+.projects__wrapper {
+	display: flex;
+	justify-content: space-around;
 }
