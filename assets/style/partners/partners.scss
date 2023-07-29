@@ -8,6 +8,7 @@
 	display: flex;
 	justify-content: center;
 	align-content: center;
+	padding-bottom: 0.5em;
 }
 
 .partners {
@@ -15,24 +16,25 @@
 	padding: $padding-side;
 }
 
-.partners__img {
-	display: grid;
-	width: 80vw;
-	padding: $padding-side;
-	grid-template-areas:
-		"dk fpg heart marhamat open"
-		"region sirius soviet tatneft way";
-	grid-template-rows: repeat(2, 25vh);
-	gap: 5.5em;
-
+.partners__img-up {
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 1.5em;
 	img {
-		height: auto;
-		width: min-content;
+		width: 15vw;
 	}
 }
 
+.partners__img-down {
+	display: flex;
+	justify-content: space-around;
+	img {
+		width: 15vw;
+	}
+}
 .partners__dk {
 	grid-area: dk;
+	width: max-content;
 }
 
 .partners__fpg {

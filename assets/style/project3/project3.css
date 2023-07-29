@@ -1,1 +1,39 @@
-/*# sourceMappingURL=project3.css.map */
+@import "../project1/project1.css";
+@font-face {
+  font-family: "Caveat";
+  src: url(../../fonts/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Mulish";
+  src: url(../../fonts/Mulish-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Mulish_italic";
+  src: url(../../fonts/Mulish-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Roboto Slab;
+  src: url(../../fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+.donate {
+  display: flex;
+  font-family: "Mulish";
+  border-radius: 89px;
+  padding: 1em 2em;
+  background-color: #622c8e;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+}
+.donate:hover, .donate:active {
+  background-color: #866bae;
+}
+@media screen and (max-width: 576px) {
+  .donate {
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=project3.css.map */

@@ -282,15 +282,15 @@
   margin-bottom: 0.5em;
   color: #266fb4;
   font-family: Caveat;
-  font-size: 59px;
+  font-size: 3.5vw;
   font-style: normal;
   font-weight: 700;
 }
 
 .resourse-text__title {
-  color: #266fb4;
+  color: #866bae;
   font-family: Caveat;
-  font-size: 50px;
+  font-size: 3vw;
   font-weight: 500;
   padding: 0.5em;
 }
@@ -299,7 +299,7 @@
   display: flex;
   color: #266fb4;
   font-family: Mulish;
-  font-size: 35px;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 400;
   padding: 0.5em;
@@ -308,8 +308,12 @@
 
 .resourse__img {
   display: grid;
+  padding: 6vw;
   grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
   gap: 2.5em;
+}
+.resourse__img img {
+  width: 35vw;
 }
 
 .img__1 {
