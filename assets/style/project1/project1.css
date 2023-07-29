@@ -282,9 +282,15 @@
   margin-bottom: 0.5em;
   color: #266fb4;
   font-family: Caveat;
-  font-size: 3.5vw;
+  font-size: 5vw;
   font-style: normal;
   font-weight: 700;
+}
+@media screen and (max-width: 576px) {
+  .resourse__title {
+    width: 90vw;
+    font-size: 6vw;
+  }
 }
 
 .resourse-text__title {
@@ -294,16 +300,28 @@
   font-weight: 500;
   padding: 0.5em;
 }
+@media screen and (max-width: 576px) {
+  .resourse-text__title {
+    width: 90vw;
+    font-size: 4vw;
+  }
+}
 
 .resourse__text {
   display: flex;
   color: #266fb4;
   font-family: Mulish;
-  font-size: 1.5vw;
+  font-size: 2vw;
   font-style: normal;
   font-weight: 400;
   padding: 0.5em;
   flex-direction: column;
+}
+@media screen and (max-width: 576px) {
+  .resourse__text {
+    width: 90vw;
+    font-size: 3.5vw;
+  }
 }
 
 .resourse__img {

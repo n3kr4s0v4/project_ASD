@@ -36,9 +36,13 @@
 	margin-bottom: 0.5em;
 	color: $basic;
 	font-family: Caveat;
-	font-size: 3.5vw;
+	font-size: 5vw;
 	font-style: normal;
 	font-weight: 700;
+	@media screen and (max-width: $mobile) {
+		width: 90vw;
+		font-size: 6vw;
+	}
 }
 
 .resourse-text__title {
@@ -47,17 +51,25 @@
 	font-size: 3vw;
 	font-weight: 500;
 	padding: 0.5em;
+	@media screen and (max-width: $mobile) {
+		width: 90vw;
+		font-size: 4vw;
+	}
 }
 
 .resourse__text {
 	display: flex;
 	color: $basic;
 	font-family: Mulish;
-	font-size: 1.5vw;
+	font-size: 2vw;
 	font-style: normal;
 	font-weight: 400;
 	padding: 0.5em;
 	flex-direction: column;
+	@media screen and (max-width: $mobile) {
+		width: 90vw;
+		font-size: 3.5vw;
+	}
 }
 
 .resourse__img {
