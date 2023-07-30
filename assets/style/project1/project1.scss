@@ -132,3 +132,11 @@
 .img__6 {
 	grid-area: img6;
 }
+
+.resourse__title-img {
+	display: block;
+	padding-left: $padding-side;
+	img {
+		width: 80vw;
+	}
+}
