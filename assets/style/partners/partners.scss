@@ -2,13 +2,17 @@
 
 .partners__title {
 	font-family: Caveat;
-	font-size: 3vw;
+	font-size: 5vw;
 	color: $basic;
 	text-transform: uppercase;
 	display: flex;
 	justify-content: center;
 	align-content: center;
 	padding-bottom: 0.5em;
+
+	@media screen and (max-width: $mobile) {
+		font-size: 7vw;
+	}
 }
 
 .partners {
@@ -34,7 +38,6 @@
 }
 .partners__dk {
 	grid-area: dk;
-	width: max-content;
 }
 
 .partners__fpg {
