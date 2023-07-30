@@ -33,7 +33,7 @@
 .resourse__title {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 0.5em;
+	margin-bottom: 1.5em;
 	color: $basic;
 	font-family: Mulish;
 	font-size: 4vw;
@@ -89,6 +89,7 @@
 		"img3 img4"
 		"img5 img6";
 	gap: 2.5em;
+	margin-bottom: -9vw;
 
 	@media screen and (max-width: $mobile) {
 		padding: $padding-side;
@@ -134,9 +135,9 @@
 }
 
 .resourse__title-img {
-	display: block;
-	padding-left: $padding-side;
+	display: flex;
+	justify-content: center;
 	img {
-		width: 80vw;
+		width: 70vw;
 	}
 }
