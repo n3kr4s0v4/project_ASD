@@ -608,53 +608,74 @@
 .team-wrapper .body {
   height: -moz-fit-content;
   height: fit-content;
-  background-color: rgba(147, 200, 194, 0.18);
+  background-color: rgba(186, 233, 228, 0.4901960784);
 }
 .team-wrapper .main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  place-items: center;
   height: 100vh;
 }
 .team-wrapper .team__title {
-  font-family: "Caveat";
-  font-size: 64px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5em;
+  color: #266fb4;
+  font-family: Caveat;
+  font-size: 4vw;
+  font-style: normal;
   font-weight: 700;
-  text-align: center;
-  color: #266FB4;
-  width: 100%;
-  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .team-wrapper .team__title {
+    width: 90vw;
+    font-size: 6vw;
+  }
 }
 .team-wrapper .gallery {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 20vw);
+  grid-gap: 4vw;
   justify-content: center;
+  width: 90vw;
+  max-width: 100%;
   margin: auto;
-  width: 1419px;
-  height: 3476px;
 }
 .team-wrapper .gallery__item {
-  width: 573px;
-  height: 858px;
-  margin: 60px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 20vw;
+  height: calc(30vw + 7.5vh);
 }
 .team-wrapper .gallery__img {
   width: 100%;
-  height: calc(100% - 30px);
+  height: calc(100% - 2vw);
   -o-object-fit: cover;
      object-fit: cover;
 }
 .team-wrapper .gallery__desc {
-  font-family: "Mulish";
-  font-size: 20px;
+  font-family: Mulish;
+  font-size: 1vw;
   font-weight: 700;
   text-align: left;
-  color: #266FB4;
+  color: #266fb4;
   width: 100%;
-  padding: 10px;
+  padding: 1vw;
+}
+@media (max-width: 768px) {
+  .team-wrapper .gallery {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .team-wrapper .gallery__item {
+    height: auto;
+  }
+  .team-wrapper .gallery__img {
+    height: auto;
+  }
+  .team-wrapper .gallery__desc {
+    font-size: 3vw;
+    padding: 2vw;
+  }
 }/*# sourceMappingURL=index.css.map */
