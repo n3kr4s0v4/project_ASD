@@ -2,15 +2,13 @@
 @import "../header/header";
 @import "../footer/footer";
 
+.team{
+    background-color: $bg;
+}
 .team-wrapper {
-    .body {
-        height: fit-content;
-        background-color: $bg-dark;
-    }
     .main {
         display: grid;
-        place-items: center;
-        height: 100vh;
+        place-items: center; 
     }
     .team__title {
         display: flex;
@@ -45,7 +43,10 @@
         flex-direction: column;
         justify-content: space-between;
         width: 20vw; 
-        height: calc(30vw + 7.5vh); 
+        height: calc(30vw + 7.5vh);
+        @media (max-width: 768px) {
+            height: auto; /* Let the height adjust automatically */
+        }
     }
     .gallery__img {
         width: 100%;
@@ -65,7 +66,7 @@
 
     @media (max-width: 768px) {
         .gallery {
-        grid-template-columns: 1fr;
+            grid-template-columns: repeat(2, 20vw);
         width: 100%;
         }
 
