@@ -41,6 +41,7 @@
   font-family: Caveat;
   font-size: 5vw;
   color: #266fb4;
+  font-weight: 600;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -49,7 +50,7 @@
 }
 @media screen and (max-width: 576px) {
   .partners__title {
-    font-size: 7vw;
+    font-size: 7.5vw;
   }
 }
 

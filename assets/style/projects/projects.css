@@ -53,15 +53,15 @@
 
 .projects__title {
   font-family: Caveat;
-  font-size: 4vw;
-  font-style: normal;
+  font-size: 5vw;
+  font-weight: 600;
   color: #266fb4;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-bottom: 1vw;
-  margin-top: -5vw;
+  margin-bottom: 5vw;
+  margin-top: -8vw;
 }
 @media screen and (max-width: 576px) {
   .projects__title {
