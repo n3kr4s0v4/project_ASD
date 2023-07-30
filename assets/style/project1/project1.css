@@ -279,7 +279,7 @@
 .resourse__title {
   display: flex;
   justify-content: center;
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
   color: #266fb4;
   font-family: Mulish;
   font-size: 4vw;
@@ -336,6 +336,7 @@
   padding: 6vw;
   grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
   gap: 2.5em;
+  margin-bottom: -9vw;
 }
 @media screen and (max-width: 576px) {
   .resourse__img {
@@ -377,9 +378,9 @@
 }
 
 .resourse__title-img {
-  display: block;
-  padding-left: 6vw;
+  display: flex;
+  justify-content: center;
 }
 .resourse__title-img img {
-  width: 80vw;
+  width: 70vw;
 }/*# sourceMappingURL=project1.css.map */
