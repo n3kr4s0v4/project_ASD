@@ -1,73 +1,72 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .news {
-  background-color: $bg;
-  .news-wrapper {
-    padding: 0 $padding-side;
-    .news__title {
-      display: flex;
-      justify-content: center;
-      color: $basic;
-      font-family: 'caveat';
-      text-transform: uppercase;
-      font-size: 2rem;
-      margin-bottom: 5vh;
-    }
-    .news__block {
-      font-family: "Mulish";
-      display: flex;
-      justify-content: space-between;
-      @media screen and (max-width: $tablet) {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-    a {
-      text-decoration: none;
-    }
-  }
+	background-color: $bg;
+	.news-wrapper {
+		padding: 0 $padding-side;
+		.news__title {
+			display: flex;
+			justify-content: center;
+			color: $basic;
+			font-family: Caveat;
+			text-transform: uppercase;
+			font-size: 5vw;
+			margin-bottom: 5vh;
+		}
+		.news__block {
+			font-family: "Mulish";
+			display: flex;
+			justify-content: space-between;
+			@media screen and (max-width: $tablet) {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+		a {
+			text-decoration: none;
+		}
+	}
 }
 
 .news-item {
-  max-width: 28vw;
-  @media screen and (max-width: $tablet) {
-    max-width: 80vw;
-    margin-bottom: 5vh;
-  }
-  .news-item__image {
-    margin-bottom: 10px;
-    img {
-      width: 100%;
-    }
-  }
-  .news-item__date {
-    margin-bottom: 1vh;
-  }
-  .news-item__text {
-    margin-bottom: 3vh;
-  }
+	max-width: 28vw;
+	@media screen and (max-width: $tablet) {
+		max-width: 80vw;
+		margin-bottom: 5vh;
+	}
+	.news-item__image {
+		margin-bottom: 10px;
+		img {
+			width: 100%;
+		}
+	}
+	.news-item__date {
+		margin-bottom: 1vh;
+	}
+	.news-item__text {
+		margin-bottom: 3vh;
+	}
 }
 
 .all-news {
-  display: flex;
-  font-family: "Mulish";
-  border-radius: 89px;
-  padding: 1em 2em;
-  background-color: $basic;
-  max-width: fit-content;
-  color: $light;
-  text-transform: uppercase;
-  font-weight: 800;
-  text-align: center;
-  margin: 0 auto;
+	display: flex;
+	font-family: "Mulish";
+	border-radius: 89px;
+	padding: 1em 2em;
+	background-color: $basic;
+	max-width: fit-content;
+	color: $light;
+	text-transform: uppercase;
+	font-weight: 800;
+	text-align: center;
+	margin: 0 auto;
 
-  &:hover,
-&:active {
-  background-color: $accent-light;
-  }
+	&:hover,
+	&:active {
+		background-color: $accent-light;
+	}
 }
-

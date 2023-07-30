@@ -39,13 +39,18 @@
 
 .partners__title {
   font-family: Caveat;
-  font-size: 3vw;
+  font-size: 5vw;
   color: #266fb4;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-content: center;
   padding-bottom: 0.5em;
+}
+@media screen and (max-width: 576px) {
+  .partners__title {
+    font-size: 7vw;
+  }
 }
 
 .partners {
@@ -72,8 +77,6 @@
 
 .partners__dk {
   grid-area: dk;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .partners__fpg {
