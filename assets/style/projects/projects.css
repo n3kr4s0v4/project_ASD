@@ -74,19 +74,19 @@
   font-family: Roboto Slab;
   font-weight: 400;
   font-size: 2vw;
-  width: 25vw;
+  width: 40vw;
   padding-bottom: 1vw;
 }
 @media screen and (max-width: 576px) {
   .project__text {
-    width: 65vw;
+    width: 75vw;
     font-size: 5vw;
   }
 }
 
 .projects__button {
   background-color: #266fb4;
-  max-width: 10vw;
+  max-width: 15vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,17 +101,17 @@
   color: #ffffff;
   font-family: Mulish;
   font-weight: 800;
-  font-size: 1.5vw;
+  font-size: 1vw;
   padding: 1em 2em;
 }
 @media screen and (max-width: 576px) {
   .projects__button .button__text {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   }
 }
 @media screen and (max-width: 576px) {
   .projects__button {
-    max-width: 20vw;
+    max-width: 30vw;
   }
 }
 
