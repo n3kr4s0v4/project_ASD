@@ -35,8 +35,8 @@
 	justify-content: center;
 	margin-bottom: 0.5em;
 	color: $basic;
-	font-family: Caveat;
-	font-size: 5vw;
+	font-family: Mulish;
+	font-size: 4vw;
 	font-style: normal;
 	font-weight: 700;
 	@media screen and (max-width: $mobile) {
@@ -49,7 +49,7 @@
 	color: $accent-light;
 	font-family: Caveat;
 	font-size: 3vw;
-	font-weight: 500;
+	font-weight: 600;
 	padding: 0.5em;
 	@media screen and (max-width: $mobile) {
 		width: 90vw;
@@ -70,6 +70,15 @@
 		width: 90vw;
 		font-size: 4vw;
 	}
+
+	a {
+		text-decoration: none;
+		color: $accent;
+
+		&:hover {
+			background-color: $accent-light;
+		}
+	}
 }
 
 .resourse__img {
@@ -81,8 +90,22 @@
 		"img5 img6";
 	gap: 2.5em;
 
+	@media screen and (max-width: $mobile) {
+		padding: $padding-side;
+		grid-template-areas:
+			"img1"
+			"img2"
+			"img3"
+			"img4"
+			"img5"
+			"img6";
+	}
+
 	img {
 		width: 35vw;
+		@media screen and (max-width: $mobile) {
+			width: 80vw;
+		}
 	}
 }
 
@@ -108,9 +131,4 @@
 
 .img__6 {
 	grid-area: img6;
-}
-
-a {
-	text-decoration: none;
-	color: $accent;
 }
