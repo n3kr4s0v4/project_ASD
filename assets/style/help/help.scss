@@ -1,79 +1,75 @@
 @import "../templates/templates";
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	/* border: 1px solid blueviolet; */
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   /* border: 1px solid blueviolet; */
 }
 
 .help__box {
-	background-color: $bg;
-	min-height: 200px;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 2rem;
+   background-color: $bg;
+   min-height: 200px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
 
-	@media screen and (max-width: $tablet) {
-	}
+   @media screen and (max-width: $tablet) {
+   }
 
-	@media screen and (max-width: $mobile) {
-		margin: 0 auto;
-	}
+   @media screen and (max-width: $mobile) {
+      margin: 0 auto;
+   }
 
-	.help__title {
-		color: $basic;
-		width: 0 auto;
-		text-align: center;
-		font-family: Caveat;
-		font-size: 6rem;
-		background-color: $bg;
+   .help__title {
+      color: $basic;
+      width: 0 auto;
+      text-align: center;
+      font-family: Caveat;
+      font-size: 6rem;
+      background-color: $bg;
 
-		@media screen and (max-width: $tablet) {
-			font-size: 4rem;
-		}
+      @media screen and (max-width: $tablet) {
+         font-size: 4rem;
+      }
 
-		@media screen and (max-width: $mobile) {
-			font-size: 3rem;
-		}
-	}
+      @media screen and (max-width: $mobile) {
+         font-size: 3rem;
+      }
+   }
 
-	.help__desc {
-		color: $basic;
-		font-family: Mulish;
-		font-size: 2rem;
-		text-align: center;
-		margin: 0 auto;
-		font-weight: 700;
-		line-height: 130%;
+   .help__desc {
+      color: $basic;
+      font-family: Mulish;
+      font-size: 2rem;
+      text-align: center;
+      margin: 0 auto;
+      font-weight: 700;
+      line-height: 130%;
 
-		@media screen and (max-width: $tablet) {
-			font-size: 1.8rem;
-		}
-		@media screen and (max-width: $mobile) {
-			font-size: 1.5rem;
-		}
-	}
+      @media screen and (max-width: $tablet) {
+         font-size: 1.8rem;
+      }
+      @media screen and (max-width: $mobile) {
+         font-size: 1.5rem;
+      }
+   }
 
-	.help__anket {
-		color: $accent;
-		font-family: Mulish;
-		font-size: 2rem;
-		font-weight: 700;
-		line-height: 130%; /* 52px */
-		text-transform: uppercase;
-		text-decoration: none;
-		text-align: center;
-
-		@media screen and (max-width: $tablet) {
-			font-size: 1.8rem;
-		}
-
-		@media screen and (max-width: $mobile) {
-			font-size: 1.3rem;
-		}
-	}
+   .help__anket {
+      margin-top: 24px;
+      margin-bottom: 30px;
+      font-family: "Mulish";
+      border-radius: 89px;
+      padding: 1em 2em;
+      background-color: $basic;
+      max-width: fit-content;
+      text-decoration: none;
+      color: $light;
+      text-transform: uppercase;
+      font-weight: 800;
+      text-align: center;
+   }
 }
