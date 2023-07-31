@@ -1,59 +1,57 @@
+@import "../templates/templates";
+
 .footer {
-    font-family: "Mulish";
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: 1fr;
-    padding: 1vw $padding-side;
-    background-color: $bg;
-    color: $basic;
-    a {
-        text-decoration: none;
-        color: $basic;
-    }
-
-    .donate {
-        margin: 0 auto;
-
-    }
-
-    @media screen and (max-width: $mobile) {
-		grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
+	font-family: "Mulish";
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr;
+	grid-template-rows: 1fr;
+	padding: 1vw $padding-side;
+	background-color: $bg;
+	color: $basic;
+	a {
+		text-decoration: none;
+		color: $basic;
 	}
 
-    .up {
-        margin: 0 auto;
-        grid-column: 2/3;
-        @media screen and (max-width: $mobile) {
-            grid-column: 1/2;
-        }
-    }
+	.donate {
+		margin: 0 auto;
+	}
+
+	@media screen and (max-width: $mobile) {
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+	}
+
+	.up {
+		margin: 0 auto;
+		grid-column: 2/3;
+		@media screen and (max-width: $mobile) {
+			grid-column: 1/2;
+		}
+	}
 }
 
 .footer__contact {
-    line-height: 150%;
-    padding-right: 2vw;
+	line-height: 150%;
+	padding-right: 2vw;
 
-    @media screen and (max-width: $mobile) {
+	@media screen and (max-width: $mobile) {
 		justify-self: center;
 	}
-
 }
 
-
-
 .footer__follow {
-    display: flex;
-    justify-content: end;
-    gap: 1vw;
-    align-items: center;
-    padding-left: 2vw;
+	display: flex;
+	justify-content: end;
+	gap: 1vw;
+	align-items: center;
+	padding-left: 2vw;
 
-    img {
-        width: 4vh;
-    }
+	img {
+		width: 4vh;
+	}
 
-    @media screen and (max-width: $mobile) {
-        justify-content: center;
-    }
+	@media screen and (max-width: $mobile) {
+		justify-content: center;
+	}
 }

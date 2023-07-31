@@ -1,0 +1,251 @@
+@import "../footer/footer";
+@import "../header/header";
+@import "../templates/templates";
+
+.about__us {
+	background-color: $bg;
+	max-width: 100vw;
+}
+
+.about__title {
+	display: flex;
+	justify-content: center;
+	font-family: Caveat;
+	font-size: 4vw;
+	padding: 1em 2em;
+	color: $basic;
+	font-weight: 700;
+	margin-top: -3vw;
+	margin-bottom: -5vw;
+
+	@media screen and (max-width: $mobile) {
+		font-size: 6vw;
+	}
+}
+
+.about__container {
+	display: flex;
+	justify-content: space-between; // Vertically center the child elements
+	align-items: center; // Horizontally center the child elements
+	padding: $padding-side;
+}
+.about__text {
+	width: 40vw;
+	font-size: 2vw;
+	color: $basic;
+	font-family: Mulish;
+	font-weight: 600;
+	text-align: justify;
+
+	@media screen and (max-width: $mobile) {
+		font-size: 2.5vw;
+	}
+}
+.about__title-img {
+	display: block; // Adjust the value to create the desired gap
+	img {
+		width: 45vw;
+	}
+}
+
+.goal__title {
+	display: flex;
+	justify-content: center;
+	font-family: Caveat;
+	font-size: 4vw;
+	padding: 1em 2em;
+	color: $basic;
+	font-weight: 700;
+	text-align: center;
+	margin-top: -5vw;
+
+	@media screen and (max-width: $mobile) {
+		font-size: 6vw;
+	}
+}
+
+.goal__container {
+	display: flex;
+	justify-content: space-between;
+	padding: $padding-side;
+	margin-top: -5vw;
+}
+
+.goal__text-img img {
+	width: 40vw;
+
+	@media screen and (max-width: $mobile) {
+		width: 42vw;
+	}
+}
+.goal__text {
+	width: 40vw;
+	font-size: 2vw;
+	color: $basic;
+	font-family: Mulish;
+	font-weight: 600;
+	overflow-wrap: break-word;
+	list-style: disc;
+	li {
+		margin-bottom: 3vw; /* Add space between each list item */
+
+		@media screen and (max-width: $mobile) {
+			margin-bottom: 1.5vw;
+		}
+	}
+
+	@media screen and (max-width: $mobile) {
+		font-size: 2.5vw;
+	}
+}
+.info__text {
+	font-size: 2vw;
+	color: $basic;
+	font-family: Mulish;
+	font-weight: 700;
+	padding: $padding-side;
+	margin-top: -5vw;
+	margin-bottom: -5vw;
+
+	p {
+		margin-bottom: 1vw;
+	}
+
+	@media screen and (max-width: $mobile) {
+		font-size: 2.5vw;
+	}
+}
+.payment {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding: $padding-side;
+}
+.payment__bank {
+	color: $basic;
+	font-family: Mulish;
+	font-weight: 400;
+	font-size: 2vw;
+	margin-top: -4vw;
+	h3 {
+		font-weight: 600;
+		margin-bottom: 1.5vw;
+	}
+	p {
+		margin-bottom: 1vw;
+	}
+
+	@media screen and (max-width: $mobile) {
+		font-size: 2.5vw;
+	}
+}
+
+.legal {
+	display: flex;
+	justify-content: start;
+	align-items: flex-start;
+	padding: $padding-side;
+}
+
+.statutory__documents {
+	color: $basic;
+	font-family: Mulish;
+	font-weight: 400;
+	font-size: 2vw;
+	margin-top: -7vw;
+	h3 {
+		font-weight: 600;
+		margin-bottom: 1.5vw;
+
+		@media screen and (max-width: $mobile) {
+			font-size: 3vw;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: $accent;
+		display: block;
+		margin-bottom: 0.5vw;
+
+		&:hover {
+			background-color: $accent-light-light; /* Change this to the desired color for hover */
+		}
+
+		@media screen and (max-width: $mobile) {
+			font-size: 2.5vw;
+		}
+	}
+}
+.reports {
+	display: flex;
+	justify-content: start;
+	align-items: flex-start;
+	padding: $padding-side;
+	margin-top: -7vw;
+}
+.reports__activity {
+	color: $basic;
+	font-family: Mulish;
+	font-weight: 400;
+	font-size: 2vw;
+	h3 {
+		font-weight: 600;
+		margin-bottom: 1.5vw;
+
+		@media screen and (max-width: $mobile) {
+			font-size: 3vw;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: $accent;
+		display: block;
+		margin-bottom: 0.5vw;
+
+		&:hover {
+			background-color: $accent-light-light; /* Change this to the desired color for hover */
+		}
+
+		@media screen and (max-width: $mobile) {
+			font-size: 2.5vw;
+		}
+	}
+}
+.media {
+	display: flex;
+	justify-content: start;
+	align-items: flex-start;
+	padding: $padding-side;
+	margin-top: -7vw;
+}
+.media__us {
+	color: $basic;
+	font-family: Mulish;
+	font-weight: 400;
+	font-size: 2vw;
+	h3 {
+		font-weight: 600;
+		margin-bottom: 1.5vw;
+
+		@media screen and (max-width: $mobile) {
+			font-size: 3vw;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: $accent;
+		display: block;
+		margin-bottom: 0.8vw;
+
+		&:hover {
+			background-color: $accent-light-light; /* Change this to the desired color for hover */
+		}
+
+		@media screen and (max-width: $mobile) {
+			font-size: 2.5vw;
+		}
+	}
+}
