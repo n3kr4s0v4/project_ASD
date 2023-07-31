@@ -37,7 +37,8 @@
 		}
 
 		@media screen and (max-width: $mobile) {
-			font-size: 3rem;
+			font-size: 11.5vw;
+			width: 100vw;
 		}
 	}
 
@@ -59,21 +60,17 @@
 	}
 
 	.help__anket {
-		color: $accent;
-		font-family: Mulish;
-		font-size: 2rem;
-		font-weight: 700;
-		line-height: 130%; /* 52px */
-		text-transform: uppercase;
+		margin-top: 24px;
+		margin-bottom: 30px;
+		font-family: "Mulish";
+		border-radius: 89px;
+		padding: 1em 2em;
+		background-color: $basic;
+		max-width: fit-content;
 		text-decoration: none;
+		color: $light;
+		text-transform: uppercase;
+		font-weight: 800;
 		text-align: center;
-
-		@media screen and (max-width: $tablet) {
-			font-size: 1.8rem;
-		}
-
-		@media screen and (max-width: $mobile) {
-			font-size: 1.3rem;
-		}
 	}
 }

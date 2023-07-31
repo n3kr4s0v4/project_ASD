@@ -9,3 +9,28 @@
 @import "../project2/project2.css";
 @import "../project3/project3.css";
 @import "../project4/project4.css";
+@import "../team/team";
+
+.mission {
+	background-color: #ebf5f4;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 7%;
+}
+
+.mission__text {
+	color: #266fb4;
+	font-family: Caveat;
+	font-size: 4vw;
+	width: 43%;
+	justify-content: center;
+}
+
+.mission_logo {
+	justify-content: end;
+}
+
+.mission__logo-pic {
+	width: 40vw;
+}

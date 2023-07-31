@@ -1,400 +1,272 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<title>Просто другие</title>
-		<link
-			href="./assets/style/normalize.css"
-			rel="stylesheet" />
-		<link
-			href="./assets/style/index/index.css"
-			rel="stylesheet" />
-	</head>
-	<body>
-		<!--Тут кнопка, меню-->
-		<header class="header">
-			<!-- кнопка хочу помочь начинается здесь -->
-			<a href="./donate.html">
-				<div class="donate">Хочу помочь</div>
-			</a>
-			<!-- кнопка хочу помочь заканчивается здесь -->
-			<div class="menu">
-				<input
-					type="checkbox"
-					id="burger" />
-				<label for="burger"></label>
-				<nav class="menu__nav">
-					<ul>
-						<li>
-							<a
-								href="#about"
-								class="menu__title"
-								>О нас</a
-							>
-						</li>
-						<li>
-							<a
-								href="./team.html"
-								class="menu__title"
-								>Команда</a
-							>
-						</li>
-						<li>
-							<a
-								href="./news.html"
-								class="menu__title"
-								>События</a
-							>
-						</li>
-						<li>
-							<a
-								href="#footer"
-								class="menu__title"
-								>Контакты</a
-							>
-						</li>
-						<li class="dropdown">
-							<a
-								href="#projects"
-								class="menu__title"
-								>Проекты</a
-							>
-							<ul class="dropdown-menu">
-								<li>
-									<a
-										href="./project1.html"
-										class="menu__title"
-										>Ресурсный класс</a
-									>
-								</li>
-								<li>
-									<a
-										href="./project2.html"
-										class="menu__title"
-										>Ресурсная группа</a
-									>
-								</li>
-								<li>
-									<a
-										href="./project3.html"
-										class="menu__title"
-										>Учебно-тренировочная квартира</a
-									>
-								</li>
-								<li>
-									<a
-										href="./project4.html"
-										class="menu__title"
-										>Инклюзивная творческая студия</a
-									>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Просто другие</title>
+	<link href="./assets/style/normalize.css" rel="stylesheet" />
+	<link href="./assets/style/index/index.css" rel="stylesheet" />
+</head>
+
+<body>
+	<!--Тут кнопка, меню-->
+	<header class="header">
+		<!-- кнопка хочу помочь начинается здесь -->
+		<a href="./donate.html">
+			<div class="donate">Хочу помочь</div>
+		</a>
+		<!-- кнопка хочу помочь заканчивается здесь -->
+		<div class="menu">
+			<input type="checkbox" id="burger" />
+			<label for="burger"></label>
+			<nav class="menu__nav">
+				<ul>
+					<li>
+						<a href="./mission.html" class="menu__title">О нас</a>
+					</li>
+					<li>
+						<a href="./team.html" class="menu__title">Команда</a>
+					</li>
+					<li>
+						<a href="./news.html" class="menu__title">События</a>
+					</li>
+					<li>
+						<a href="#footer" class="menu__title">Контакты</a>
+					</li>
+					<li class="dropdown">
+						<a href="#projects" class="menu__title">Проекты</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="./project1.html" class="menu__title">Ресурсный класс</a>
+							</li>
+							<li>
+								<a href="./project2.html" class="menu__title">Ресурсная группа</a>
+							</li>
+							<li>
+								<a href="./project3.html" class="menu__title">Учебно-тренировочная квартира</a>
+							</li>
+							<li>
+								<a href="./project4.html" class="menu__title">Инклюзивная творческая студия</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!--Основная секция-->
+	<main class="main">
+		<!--Блок с лозунгом-->
+		<div class="mission" id="about">
+			<div class="mission__text">
+				С 2016 года помогаем детям с аутизмом и их семьям, содействуем развитию инклюзивного общества.
 			</div>
-		</header>
-		<!--Основная секция-->
-		<main class="main">
-			<!--Блок с лозунгом-->
-			<div
-				class="mission"
-				id="about"></div>
+			<div class="mission__logo">
+				<img class="mission__logo-pic" src="assets/img/mission/logo.png" />
+			</div>
+		</div>
 
-			<!--Проекты-->
-			<section
-				class="projects"
-				id="projects">
-				<div class="projects__title">
-					<p>Наши проекты</p>
+		<!--Проекты-->
+		<section class="projects" id="projects">
+			<div class="projects__title">
+				<p>Наши проекты</p>
+			</div>
+			<div class="projects__cont">
+				<div class="project1">
+					<div class="project__img">
+						<img src="assets/img/projects/pr1.png" alt="ресурсный класс" />
+					</div>
+					<div class="project__text">Проект “Ресурсный класс”</div>
+					<a class="link__project" href="project1.html"><button class="projects__button">
+							<div class="button__text">Подробнее</div>
+						</button></a>
 				</div>
-				<div class="projects__cont">
-					<div class="project1">
-						<div class="project__img">
-							<img
-								src="assets/img/projects/pr1.png"
-								alt="ресурсный класс" />
-						</div>
-						<div class="project__text">Проект “Ресурсный класс”</div>
-						<a
-							class="link__project"
-							href="project1.html"
-							><button class="projects__button">
-								<div class="button__text">Подробнее</div>
-							</button></a
-						>
+				<div class="project3">
+					<div class="project__img">
+						<img src="assets/img/projects/pr3.png" alt="квартира" />
 					</div>
-					<div class="project3">
-						<div class="project__img">
-							<img
-								src="assets/img/projects/pr3.png"
-								alt="квартира" />
-						</div>
-						<div class="project__text">
-							Проект “Учебно-тренировочная квартира”
-						</div>
-						<a
-							class="link__project"
-							href="project3.html"
-							><button class="projects__button">
-								<div class="button__text">Подробнее</div>
-							</button></a
-						>
+					<div class="project__text">
+						Проект “Учебно-тренировочная квартира”
 					</div>
-				</div>
-				<div class="projects__wrapper">
-					<div class="project2">
-						<div class="project__img">
-							<img
-								src="assets/img/projects/pr2.png"
-								alt="ресурсная группа" />
-						</div>
-						<div class="project__text">Проект "Ресурсная группа"</div>
-						<a
-							class="link__project"
-							href="project2.html"
-							><button class="projects__button">
-								<div class="button__text">Подробнее</div>
-							</button></a
-						>
-					</div>
-					<div class="project4">
-						<div class="project__img">
-							<img
-								src="assets/img/projects/pr4.png"
-								alt="эбру" />
-						</div>
-						<div class="project__text">
-							Проект “Инклюзивная творческая студия”
-						</div>
-						<a
-							class="link__project"
-							href="project4.html"
-							><button class="projects__button">
-								<div class="button__text">Подробнее</div>
-							</button></a
-						>
-					</div>
-				</div>
-			</section>
-
-			<!--Помощь-->
-			<div class="help">
-				<div class="help__box">
-					<p class="help__title">Как получить помощь?</p>
-					<p class="help__desc">Просим Вас заполнить анкету</p>
-					<a
-						class="help__anket"
-						href="https://forms.gle/U1ZNtuY57Fgd8wZS9"
-						>Заполнить анкету</a
-					>
+					<a class="link__project" href="project3.html"><button class="projects__button">
+							<div class="button__text">Подробнее</div>
+						</button></a>
 				</div>
 			</div>
-
-			<!--Новости-->
-			<section
-				class="news"
-				id="news">
-				<div class="news-wrapper">
-					<h2 class="news__title">НАШИ НОВОСТИ</h2>
-					<div class="news__block">
-						<div class="news-item">
-							<div class="news-item__image">
-								<img
-									src="./assets/img/news/news-pic1.jpg"
-									alt="грант 2023" />
-							</div>
-							<p class="news-item__date">1.06.2023</p>
-							<p class="news-item__text">
-								Вы думаете, что летом команды ресурсных классов и групп
-								отдыхают? Вовсе нет! После завершения итоговой диагностики детей
-								наступает самое интересное: кураторы и супервизор анализируют
-								результаты, готовят итоговые отчёты для родителей и вносят
-								результаты в индивидуальные АОП 📋📝
-							</p>
-						</div>
-						<div class="news-item">
-							<div class="news-item__image">
-								<img
-									src="./assets/img/news/news-pic2.jpg"
-									alt="грант 2023" />
-							</div>
-							<p class="news-item__date">15.03.2023</p>
-							<p class="news-item__text">
-								Друзья, мы спешим поделиться радостной новостью! Сегодня
-								опубликованы результаты второго конкурса-2023 Фонд президентских
-								грантов, и наша заявка снова одобрена! 👏
-							</p>
-						</div>
-						<div class="news-item">
-							<div class="news-item__image">
-								<img
-									src="./assets/img/news/news-pic3.jpg"
-									alt="грант 2023" />
-							</div>
-							<p class="news-item__date">31.08.2021</p>
-							<p class="news-item__text">
-								На днях в школе №86 был открыт ресурсный класс. Ресурсный класс
-								— это специальная образовательная модель, в рамках которой дети
-								с аутизмом и другими нарушениями развития могут учиться в
-								общеобразовательной школе совместно с нормотипичными
-								сверстниками.
-							</p>
-						</div>
+			<div class="projects__wrapper">
+				<div class="project2">
+					<div class="project__img">
+						<img src="assets/img/projects/pr2.png" alt="ресурсная группа" />
 					</div>
-					<a href="#"><div class="all-news">Смотреть все события</div></a>
+					<div class="project__text">Проект "Ресурсная группа"</div>
+					<a class="link__project" href="project2.html"><button class="projects__button">
+							<div class="button__text">Подробнее</div>
+						</button></a>
 				</div>
-			</section>
-			<!--партнеры-->
-			<section class="partners">
-				<div class="partners__title">Наши партнёры</div>
-				<div class="partners__img-up">
-					<div class="partners__region">
-						<a
-							target="_blank"
-							href="https://autismregions.ru/">
-							<img
-								src="assets/img/partners/region.svg"
-								alt="" />
-						</a>
+				<div class="project4">
+					<div class="project__img">
+						<img src="assets/img/projects/pr4.png" alt="эбру" />
 					</div>
-
-					<div class="partners__fpg">
-						<a
-							target="_blank"
-							href="https://президентскиегранты.рф/">
-							<img
-								src="assets/img/partners/fpg.svg"
-								alt="" />
-						</a>
+					<div class="project__text">
+						Проект “Инклюзивная творческая студия”
 					</div>
-
-					<div class="partners__dk">
-						<a
-							target="_blank"
-							href="https://dobro.kzn.ru/">
-							<img
-								src="assets/img/partners/dk.svg"
-								alt="" />
-						</a>
-					</div>
-
-					<div class="partners__heart">
-						<a
-							target="_blank"
-							href="https://nakedheart.ru/">
-							<img
-								src="assets/img/partners/heart.svg"
-								alt="" />
-						</a>
-					</div>
-					<div class="partners__way">
-						<a
-							target="_blank"
-							href="https://t.me/Autizmneprigovorkazan">
-							<img
-								src="assets/img/partners/way.svg"
-								alt="" />
-						</a>
-					</div>
-				</div>
-				<div class="partners__img-down">
-					<div class="partners__soviet">
-						<a
-							target="_blank"
-							href="https://kzn.ru/meriya/administratsii-rayonov/sovetskiy/?lang=ru">
-							<img
-								src="assets/img/partners/soviet.svg"
-								alt="" />
-						</a>
-					</div>
-					<div class="partners__sirius">
-						<a
-							target="_blank"
-							href="https://siriusuniversity.ru/">
-							<img
-								src="assets/img/partners/sirius.svg"
-								alt="" />
-						</a>
-					</div>
-					<div class="partners__marhamat">
-						<a
-							target="_blank"
-							href="https://fond-marhamat.ru/">
-							<img
-								src="assets/img/partners/marhamat.svg"
-								alt="" />
-						</a>
-					</div>
-
-					<div class="partners__tatneft">
-						<a
-							target="_blank"
-							href="http://www.bf-tatneft.ru/fond/">
-							<img
-								src="assets/img/partners/tatneft.svg"
-								alt="" />
-						</a>
-					</div>
-
-					<div class="partners__open">
-						<a
-							target="_blank"
-							href="https://otkrytofond.ru/">
-							<img
-								src="assets/img/partners/open.svg"
-								alt="" />
-						</a>
-					</div>
-				</div>
-			</section>
-		</main>
-		<!--Контакты-->
-		<footer
-			class="footer"
-			id="footer">
-			<div class="footer__contact">
-				<div>
-					<a href="tel:+7-937-596-01-66">+7-937-596-01-66</a>
-				</div>
-				<div>
-					<a href="mailto:prosto.drugie@mail.ru?subject=привет&body=вопрос"
-						>prosto.drugie@mail.ru</a
-					>
+					<a class="link__project" href="project4.html"><button class="projects__button">
+							<div class="button__text">Подробнее</div>
+						</button></a>
 				</div>
 			</div>
-			<!-- кнопка хочу помочь начинается здесь -->
-			<a
-				href="./donate.html"
-				target="_blank">
-				<div class="donate">Хочу помочь</div>
-			</a>
-			<!-- кнопка хочу помочь заканчивается здесь -->
-			<div class="footer__follow">
-				Следите за нашими новостями:
-				<a
-					href="https://t.me/ProstoDrugie"
-					target="_blank">
-					<img
-						src="./assets/img/footer/tg.svg"
-						alt="telegram" />
-				</a>
-				<a
-					href="https://vk.com/prosto.drugie_kazan"
-					target="_blank">
-					<img
-						src="./assets/img/footer/vk.svg"
-						alt="vk" />
+		</section>
+
+		<!--Помощь-->
+		<div class="help">
+			<div class="help__box">
+				<p class="help__title">Как получить помощь?</p>
+				<p class="help__desc">Просим Вас заполнить анкету</p>
+				<!-- <a class="donate" href="https://forms.gle/U1ZNtuY57Fgd8wZS9"> Заполнить анкету
+				</a> -->
+				<a class="help__anket" href="https://forms.gle/U1ZNtuY57Fgd8wZS9">Заполнить анкету</a>
+			</div>
+		</div>
+
+		<!--Новости-->
+		<section class="news" id="news">
+			<div class="news-wrapper">
+				<h2 class="news__title">НАШИ НОВОСТИ</h2>
+				<div class="news__block">
+					<div class="news-item">
+						<div class="news-item__image">
+							<img src="./assets/img/news/news-pic1.jpg" alt="грант 2023" />
+						</div>
+						<p class="news-item__date">1.06.2023</p>
+						<p class="news-item__text">
+							Вы думаете, что летом команды ресурсных классов и групп
+							отдыхают? Вовсе нет! После завершения итоговой диагностики детей
+							наступает самое интересное: кураторы и супервизор анализируют
+							результаты, готовят итоговые отчёты для родителей и вносят
+							результаты в индивидуальные АОП 📋📝
+						</p>
+					</div>
+					<div class="news-item">
+						<div class="news-item__image">
+							<img src="./assets/img/news/news-pic2.jpg" alt="грант 2023" />
+						</div>
+						<p class="news-item__date">15.03.2023</p>
+						<p class="news-item__text">
+							Друзья, мы спешим поделиться радостной новостью! Сегодня
+							опубликованы результаты второго конкурса-2023 Фонд президентских
+							грантов, и наша заявка снова одобрена! 👏
+						</p>
+					</div>
+					<div class="news-item">
+						<div class="news-item__image">
+							<img src="./assets/img/news/news-pic3.jpg" alt="грант 2023" />
+						</div>
+						<p class="news-item__date">31.08.2021</p>
+						<p class="news-item__text">
+							На днях в школе №86 был открыт ресурсный класс. Ресурсный класс
+							— это специальная образовательная модель, в рамках которой дети
+							с аутизмом и другими нарушениями развития могут учиться в
+							общеобразовательной школе совместно с нормотипичными
+							сверстниками.
+						</p>
+					</div>
+				</div>
+				<a href="#">
+					<div class="all-news">Смотреть все события</div>
 				</a>
 			</div>
-			<a
-				href="#top"
-				class="up"
-				>вверх</a
-			>
-		</footer>
-	</body>
+		</section>
+		<!--партнеры-->
+		<section class="partners">
+			<div class="partners__title">Наши партнёры</div>
+			<div class="partners__img-up">
+				<div class="partners__region">
+					<a target="_blank" href="https://autismregions.ru/">
+						<img src="assets/img/partners/region.svg" alt="" />
+					</a>
+				</div>
+
+				<div class="partners__fpg">
+					<a target="_blank" href="https://президентскиегранты.рф/">
+						<img src="assets/img/partners/fpg.svg" alt="" />
+					</a>
+				</div>
+
+				<div class="partners__dk">
+					<a target="_blank" href="https://dobro.kzn.ru/">
+						<img src="assets/img/partners/dk.svg" alt="" />
+					</a>
+				</div>
+
+				<div class="partners__heart">
+					<a target="_blank" href="https://nakedheart.ru/">
+						<img src="assets/img/partners/heart.svg" alt="" />
+					</a>
+				</div>
+				<div class="partners__way">
+					<a target="_blank" href="https://t.me/Autizmneprigovorkazan">
+						<img src="assets/img/partners/way.svg" alt="" />
+					</a>
+				</div>
+			</div>
+			<div class="partners__img-down">
+				<div class="partners__soviet">
+					<a target="_blank" href="https://kzn.ru/meriya/administratsii-rayonov/sovetskiy/?lang=ru">
+						<img src="assets/img/partners/soviet.svg" alt="" />
+					</a>
+				</div>
+				<div class="partners__sirius">
+					<a target="_blank" href="https://siriusuniversity.ru/">
+						<img src="assets/img/partners/sirius.svg" alt="" />
+					</a>
+				</div>
+				<div class="partners__marhamat">
+					<a target="_blank" href="https://fond-marhamat.ru/">
+						<img src="assets/img/partners/marhamat.svg" alt="" />
+					</a>
+				</div>
+
+				<div class="partners__tatneft">
+					<a target="_blank" href="http://www.bf-tatneft.ru/fond/">
+						<img src="assets/img/partners/tatneft.svg" alt="" />
+					</a>
+				</div>
+
+				<div class="partners__open">
+					<a target="_blank" href="https://otkrytofond.ru/">
+						<img src="assets/img/partners/open.svg" alt="" />
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!--Контакты-->
+	<footer class="footer" id="footer">
+		<div class="footer__contact">
+			<div>
+				<a href="tel:+7-937-596-01-66">+7-937-596-01-66</a>
+			</div>
+			<div>
+				<a href="mailto:prosto.drugie@mail.ru?subject=привет&body=вопрос">prosto.drugie@mail.ru</a>
+			</div>
+		</div>
+		<!-- кнопка хочу помочь начинается здесь -->
+		<a href="./donate.html" target="_blank">
+			<div class="donate">Хочу помочь</div>
+		</a>
+		<!-- кнопка хочу помочь заканчивается здесь -->
+		<div class="footer__follow">
+			Следите за нашими новостями:
+			<a href="https://t.me/ProstoDrugie" target="_blank">
+				<img src="./assets/img/footer/tg.svg" alt="telegram" />
+			</a>
+			<a href="https://vk.com/prosto.drugie_kazan" target="_blank">
+				<img src="./assets/img/footer/vk.svg" alt="vk" />
+			</a>
+		</div>
+		<a href="#top" class="up">вверх</a>
+	</footer>
+</body>
+
 </html>

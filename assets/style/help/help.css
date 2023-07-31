@@ -80,7 +80,8 @@
 }
 @media screen and (max-width: 576px) {
   .help__box .help__title {
-    font-size: 3rem;
+    font-size: 11.5vw;
+    width: 100vw;
   }
 }
 .help__box .help__desc {
@@ -103,22 +104,17 @@
   }
 }
 .help__box .help__anket {
-  color: #622c8e;
-  font-family: Mulish;
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 130%; /* 52px */
-  text-transform: uppercase;
+  margin-top: 24px;
+  margin-bottom: 30px;
+  font-family: "Mulish";
+  border-radius: 89px;
+  padding: 1em 2em;
+  background-color: #266fb4;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 800;
   text-align: center;
-}
-@media screen and (max-width: 768px) {
-  .help__box .help__anket {
-    font-size: 1.8rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .help__box .help__anket {
-    font-size: 1.3rem;
-  }
 }/*# sourceMappingURL=help.css.map */
