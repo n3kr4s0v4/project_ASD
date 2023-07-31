@@ -11,12 +11,13 @@
 	display: flex;
 	justify-content: center;
 	font-family: Caveat;
+	text-transform: uppercase;
 	font-size: 4vw;
 	padding: 1em 2em;
 	color: $basic;
 	font-weight: 700;
 	margin-top: -3vw;
-	margin-bottom: -5vw;
+	margin-bottom: -7vw;
 
 	@media screen and (max-width: $mobile) {
 		font-size: 6vw;
@@ -28,23 +29,33 @@
 	justify-content: space-between; // Vertically center the child elements
 	align-items: center; // Horizontally center the child elements
 	padding: $padding-side;
+
+	@media screen and (max-width: $mobile) {
+		flex-direction: column;
+	}
 }
 .about__text {
 	width: 40vw;
 	font-size: 2vw;
 	color: $basic;
 	font-family: Mulish;
-	font-weight: 600;
+	font-weight: 500;
 	text-align: justify;
 
 	@media screen and (max-width: $mobile) {
-		font-size: 2.5vw;
+		font-size: 3vw;
+		width: 85vw;
 	}
 }
 .about__title-img {
 	display: block; // Adjust the value to create the desired gap
 	img {
 		width: 45vw;
+
+		@media screen and (max-width: $mobile) {
+			width: 85vw;
+			margin-top: 2vw;
+		}
 	}
 }
 
@@ -52,6 +63,7 @@
 	display: flex;
 	justify-content: center;
 	font-family: Caveat;
+	text-transform: uppercase;
 	font-size: 4vw;
 	padding: 1em 2em;
 	color: $basic;
@@ -69,25 +81,38 @@
 	justify-content: space-between;
 	padding: $padding-side;
 	margin-top: -5vw;
-}
-
-.goal__text-img img {
-	width: 40vw;
 
 	@media screen and (max-width: $mobile) {
-		width: 42vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
 	}
 }
+
+.goal__text-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		width: 40vw;
+
+		@media screen and (max-width: $mobile) {
+			width: 85vw;
+			margin-bottom: 2vw;
+		}
+	}
+}
+
 .goal__text {
 	width: 40vw;
-	font-size: 2vw;
+	font-size: 1.5vw;
 	color: $basic;
 	font-family: Mulish;
-	font-weight: 600;
-	overflow-wrap: break-word;
+	font-weight: 500;
 	list-style: disc;
 	li {
-		margin-bottom: 3vw; /* Add space between each list item */
+		margin-bottom: 2vw; /* Add space between each list item */
 
 		@media screen and (max-width: $mobile) {
 			margin-bottom: 1.5vw;
@@ -95,7 +120,8 @@
 	}
 
 	@media screen and (max-width: $mobile) {
-		font-size: 2.5vw;
+		width: 85vw;
+		font-size: 3vw;
 	}
 }
 .info__text {
@@ -112,7 +138,7 @@
 	}
 
 	@media screen and (max-width: $mobile) {
-		font-size: 2.5vw;
+		font-size: 3.5vw;
 	}
 }
 .payment {
@@ -136,7 +162,7 @@
 	}
 
 	@media screen and (max-width: $mobile) {
-		font-size: 2.5vw;
+		font-size: 3vw;
 	}
 }
 
@@ -158,7 +184,7 @@
 		margin-bottom: 1.5vw;
 
 		@media screen and (max-width: $mobile) {
-			font-size: 3vw;
+			font-size: 3.5vw;
 		}
 	}
 
@@ -173,7 +199,7 @@
 		}
 
 		@media screen and (max-width: $mobile) {
-			font-size: 2.5vw;
+			font-size: 3vw;
 		}
 	}
 }
@@ -194,7 +220,7 @@
 		margin-bottom: 1.5vw;
 
 		@media screen and (max-width: $mobile) {
-			font-size: 3vw;
+			font-size: 3.5vw;
 		}
 	}
 
@@ -209,7 +235,7 @@
 		}
 
 		@media screen and (max-width: $mobile) {
-			font-size: 2.5vw;
+			font-size: 3vw;
 		}
 	}
 }
@@ -230,7 +256,7 @@
 		margin-bottom: 1.5vw;
 
 		@media screen and (max-width: $mobile) {
-			font-size: 3vw;
+			font-size: 3.5vw;
 		}
 	}
 
@@ -245,7 +271,7 @@
 		}
 
 		@media screen and (max-width: $mobile) {
-			font-size: 2.5vw;
+			font-size: 3vw;
 		}
 	}
 }

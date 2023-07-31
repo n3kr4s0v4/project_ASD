@@ -308,12 +308,13 @@
   display: flex;
   justify-content: center;
   font-family: Caveat;
+  text-transform: uppercase;
   font-size: 4vw;
   padding: 1em 2em;
   color: #266fb4;
   font-weight: 700;
   margin-top: -3vw;
-  margin-bottom: -5vw;
+  margin-bottom: -7vw;
 }
 @media screen and (max-width: 576px) {
   .about__title {
@@ -327,18 +328,24 @@
   align-items: center;
   padding: 6vw;
 }
+@media screen and (max-width: 576px) {
+  .about__container {
+    flex-direction: column;
+  }
+}
 
 .about__text {
   width: 40vw;
   font-size: 2vw;
   color: #266fb4;
   font-family: Mulish;
-  font-weight: 600;
+  font-weight: 500;
   text-align: justify;
 }
 @media screen and (max-width: 576px) {
   .about__text {
-    font-size: 2.5vw;
+    font-size: 3vw;
+    width: 85vw;
   }
 }
 
@@ -348,11 +355,18 @@
 .about__title-img img {
   width: 45vw;
 }
+@media screen and (max-width: 576px) {
+  .about__title-img img {
+    width: 85vw;
+    margin-top: 2vw;
+  }
+}
 
 .goal__title {
   display: flex;
   justify-content: center;
   font-family: Caveat;
+  text-transform: uppercase;
   font-size: 4vw;
   padding: 1em 2em;
   color: #266fb4;
@@ -372,27 +386,40 @@
   padding: 6vw;
   margin-top: -5vw;
 }
+@media screen and (max-width: 576px) {
+  .goal__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
+.goal__text-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .goal__text-img img {
   width: 40vw;
 }
 @media screen and (max-width: 576px) {
   .goal__text-img img {
-    width: 42vw;
+    width: 85vw;
+    margin-bottom: 2vw;
   }
 }
 
 .goal__text {
   width: 40vw;
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: #266fb4;
   font-family: Mulish;
-  font-weight: 600;
-  overflow-wrap: break-word;
+  font-weight: 500;
   list-style: disc;
 }
 .goal__text li {
-  margin-bottom: 3vw; /* Add space between each list item */
+  margin-bottom: 2vw; /* Add space between each list item */
 }
 @media screen and (max-width: 576px) {
   .goal__text li {
@@ -401,7 +428,8 @@
 }
 @media screen and (max-width: 576px) {
   .goal__text {
-    font-size: 2.5vw;
+    width: 85vw;
+    font-size: 3vw;
   }
 }
 
@@ -419,7 +447,7 @@
 }
 @media screen and (max-width: 576px) {
   .info__text {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   }
 }
 
@@ -446,7 +474,7 @@
 }
 @media screen and (max-width: 576px) {
   .payment__bank {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 }
 
@@ -470,7 +498,7 @@
 }
 @media screen and (max-width: 576px) {
   .statutory__documents h3 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 }
 .statutory__documents a {
@@ -484,7 +512,7 @@
 }
 @media screen and (max-width: 576px) {
   .statutory__documents a {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 }
 
@@ -508,7 +536,7 @@
 }
 @media screen and (max-width: 576px) {
   .reports__activity h3 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 }
 .reports__activity a {
@@ -522,7 +550,7 @@
 }
 @media screen and (max-width: 576px) {
   .reports__activity a {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 }
 
@@ -546,7 +574,7 @@
 }
 @media screen and (max-width: 576px) {
   .media__us h3 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 }
 .media__us a {
@@ -560,6 +588,6 @@
 }
 @media screen and (max-width: 576px) {
   .media__us a {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 }/*# sourceMappingURL=about.css.map */
