@@ -23,6 +23,7 @@
 }
 .donate {
   display: flex;
+  position: relative;
   font-family: "Mulish";
   border-radius: 89px;
   padding: 1em 2em;
@@ -35,8 +36,13 @@
   font-weight: 800;
   text-align: center;
 }
-.donate:hover, .donate:active {
-  background-color: #866bae;
+.donate:hover:after {
+  content: url(../../img/header/stars.png);
+  position: absolute;
+  transform: scale(0.3);
+  top: -275%;
+  left: -140%;
+  z-index: 1;
 }
 @media screen and (max-width: 576px) {
   .donate {
