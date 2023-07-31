@@ -33,6 +33,7 @@ $padding-side: 6vw;
 
 .donate {
 	display: flex;
+	position: relative;
 	font-family: "Mulish";
 	border-radius: 89px;
 	padding: 1em 2em;
@@ -44,9 +45,13 @@ $padding-side: 6vw;
 	font-weight: 800;
 	text-align: center;
 
-	&:hover,
-	&:active {
-		background-color: $accent-light;
+	&:hover:after {
+		content: url(../../img/header/stars.png);
+		position: absolute;
+		transform: scale(0.3);
+		top: -275%;
+		left: -140%;
+		z-index: 1;
 	}
 
 	@media screen and (max-width: $mobile) {
