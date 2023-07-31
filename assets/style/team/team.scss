@@ -1,0 +1,102 @@
+@import "../templates/_templates";
+@import "../header/header";
+@import "../footer/footer";
+
+.team {
+	background-color: $bg;
+	padding-bottom: 2vw;
+}
+
+.team__title {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0.5em;
+	color: $basic;
+	font-family: Caveat;
+	font-size: 4vw;
+	font-style: normal;
+	font-weight: 700;
+
+	@media screen and (max-width: $mobile) {
+		font-size: 7vw;
+	}
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 25vw);
+	justify-content: center;
+	grid-template-areas:
+		"anna svetlana"
+		"polina oksana"
+		"lilia lilia";
+	gap: 5vw;
+	img {
+		width: 25vw;
+
+		@media screen and (max-width: $mobile) {
+			width: 50vw;
+		}
+	}
+
+	@media screen and (max-width: $mobile) {
+		justify-content: center;
+		grid-template-areas:
+			"anna"
+			"svetlana"
+			"polina"
+			"oksana"
+			"lilia";
+	}
+}
+
+.gallery__anna {
+	grid-area: anna;
+}
+
+.gallery__svetlana {
+	grid-area: svetlana;
+}
+
+.gallery__polina {
+	grid-area: polina;
+}
+
+.gallery__oksana {
+	grid-area: oksana;
+}
+
+.gallery__lilia {
+	grid-area: lilia;
+	padding-left: 12vw;
+
+	@media screen and (max-width: $mobile) {
+		padding-left: 0;
+	}
+}
+
+.gallery__desc {
+	font-family: Mulish;
+	font-size: 2vw;
+	font-weight: 700;
+	color: $basic;
+	width: 25vw;
+
+	@media screen and (max-width: $mobile) {
+		font-size: 4vw;
+		width: 50vw;
+	}
+}
+
+.gallery__title {
+	font-size: 1.5vw;
+	font-weight: 600;
+	color: $basic;
+	width: 25vw;
+	font-family: Mulish;
+
+	@media screen and (max-width: $mobile) {
+		font-size: 3vw;
+		width: 50vw;
+	}
+}
