@@ -318,6 +318,7 @@
 @media screen and (max-width: 576px) {
   .team__title {
     font-size: 7vw;
+    padding-top: 2vw;
   }
 }
 

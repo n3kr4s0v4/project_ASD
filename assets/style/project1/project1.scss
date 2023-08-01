@@ -92,7 +92,7 @@
 	margin-bottom: -9vw;
 
 	@media screen and (max-width: $mobile) {
-		padding: $padding-side;
+		justify-content: center;
 		grid-template-areas:
 			"img1"
 			"img2"

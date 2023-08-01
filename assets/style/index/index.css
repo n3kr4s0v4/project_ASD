@@ -7,6 +7,8 @@
 @import "../project4/project4.css";
 @import "../team/team.css";
 @import "../aboutUs/about.css";
+@import "../contacts/contacts.css";
+@import "../events/events.css";
 @font-face {
   font-family: "Caveat";
   src: url(../../fonts/Caveat-VariableFont_wght.ttf);

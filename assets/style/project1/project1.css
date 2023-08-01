@@ -391,7 +391,7 @@
 }
 @media screen and (max-width: 576px) {
   .resourse__img {
-    padding: 6vw;
+    justify-content: center;
     grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6";
   }
 }
