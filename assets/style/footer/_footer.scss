@@ -18,7 +18,7 @@
 	}
 
 	@media screen and (max-width: $mobile) {
-		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-rows: 1.5fr 1fr 1fr;
 		grid-template-columns: 1fr;
 	}
 
@@ -36,7 +36,7 @@
 	padding-right: 2vw;
 
 	@media screen and (max-width: $mobile) {
-		justify-self: center;
+		text-align: center;
 	}
 }
 

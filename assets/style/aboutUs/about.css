@@ -61,7 +61,7 @@
 }
 @media screen and (max-width: 576px) {
   .footer {
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr;
     grid-template-columns: 1fr;
   }
 }
@@ -81,7 +81,7 @@
 }
 @media screen and (max-width: 576px) {
   .footer__contact {
-    justify-self: center;
+    text-align: center;
   }
 }
 
