@@ -1,1 +1,59 @@
 @import "../templates/templates";
+
+.events {
+	background-color: $bg;
+	padding-bottom: 2vw;
+}
+
+.events__title {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0.5em;
+	color: $basic;
+	font-family: Caveat;
+	text-transform: uppercase;
+	font-size: 4vw;
+	font-style: normal;
+	font-weight: 700;
+
+	@media screen and (max-width: $mobile) {
+		font-size: 7vw;
+		padding-top: 2vw;
+	}
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+	align-items: center;
+	margin-bottom: 5em;
+}
+
+.event__image {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.event__text {
+	display: flex;
+	color: $basic;
+	font-family: Mulish;
+	font-size: 1.5vw;
+	font-style: normal;
+	font-weight: 400;
+	padding: 0.5em;
+	flex-direction: column;
+  @media screen and (max-width: 1024px) {
+		font-size: 2vw;
+  }
+	@media screen and (max-width: 768px) {
+		font-size: 3vw;
+	}
+}
