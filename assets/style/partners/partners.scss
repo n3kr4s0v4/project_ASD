@@ -25,16 +25,39 @@
 	display: flex;
 	justify-content: space-around;
 	padding-bottom: 1.5em;
+
+	@media screen and (max-width: $mobile) {
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 0;
+	}
+
 	img {
 		width: 15vw;
+
+		@media screen and (max-width: $mobile) {
+			width: 55vw;
+			padding-bottom: 2.5vw;
+		}
 	}
 }
 
 .partners__img-down {
 	display: flex;
 	justify-content: space-around;
+
+	@media screen and (max-width: $mobile) {
+		flex-direction: column;
+		align-items: center;
+	}
+
 	img {
 		width: 15vw;
+
+		@media screen and (max-width: $mobile) {
+			width: 55vw;
+			padding-bottom: 2.5vw;
+		}
 	}
 }
 .partners__dk {
